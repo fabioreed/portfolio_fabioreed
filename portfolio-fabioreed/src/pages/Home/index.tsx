@@ -3,8 +3,7 @@ import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
 import { BsCloudArrowDownFill } from 'react-icons/bs'
-// import { GoMarkGithub } from 'react-icons/go'
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import Me from '../../assets/MeBlackAndWhite.jpg'
 import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
@@ -47,7 +46,7 @@ const Home = () => {
           <img src={Me} />
           <SocialMediaContainer>
             <MediaSocial to='https://www.linkedin.com/in/fabioreed/' target="_blank"><FaLinkedin /></MediaSocial>
-            {/* <MediaSocial to='https://github.com/fabioreed' target="_blank"><GoMarkGithub /></MediaSocial> */}
+            <MediaSocial to='https://github.com/fabioreed' target="_blank"><FaGithub /></MediaSocial>
           </SocialMediaContainer>
         </PictureHome>
       </SectionnContainerHome>

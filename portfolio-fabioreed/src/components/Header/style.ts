@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
 
     div {
       h3 {
-        font-size: 3rem;
+        font-size: 1.4rem;
         font-weight: bold;
       }
 
@@ -45,7 +45,7 @@ export const HeaderContainer = styled.header`
 
     div {
       h3 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
       }
     }
 

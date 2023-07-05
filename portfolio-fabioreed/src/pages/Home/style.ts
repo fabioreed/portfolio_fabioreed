@@ -20,7 +20,7 @@ export const SectionnContainerHome = styled.section`
     gap: 1.2rem;
 
     h1 {
-      font-size: 2.1rem;
+      font-size: 1.5rem;
       color: var(--black);
 
       span {
@@ -31,7 +31,7 @@ export const SectionnContainerHome = styled.section`
     
     p {
       color: var(--gray);
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -73,6 +73,7 @@ export const TechnologiesContainer = styled.article`
 
     :hover {
       color: var(--primary-color);
+      
     }
   }
 
@@ -107,6 +108,11 @@ export const ResumeContainer = styled.aside`
 `
 
 export const PDFContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     a:nth-child(1) {
       display: flex;
       align-items: center;
@@ -148,16 +154,19 @@ export const PDFContainer = styled.div`
 
       :hover {
         color: var(--yellow);
-
         border-bottom: 1.2px solid var(--yellow);
       }
+    }
+
+    @media (min-width: 768px) {
+      align-items: flex-start;
     }
 `
 
 export const PictureHome = styled.section`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 880px) {
     display: block;
 
     img {
