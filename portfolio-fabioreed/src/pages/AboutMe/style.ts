@@ -8,6 +8,8 @@ export const ContainerAboutMe = styled.main`
     display: flex;
     flex-direction: column;
     gap: 1.7rem;
+
+    margin-top: 1rem;
   }
 
   article {
@@ -16,7 +18,7 @@ export const ContainerAboutMe = styled.main`
     gap: 1rem;
 
     h1 {
-      color: var(--black);
+      color: var(--gray);
     }
 
     p {
@@ -39,7 +41,7 @@ export const ContainerAboutMe = styled.main`
         text-decoration: none;
       }
 
-      :hover {
+      &:hover {
         color: var(--yellow);
       }
     }
@@ -47,9 +49,7 @@ export const ContainerAboutMe = styled.main`
 
   @media (min-width: 768px) {
     footer {
-    padding: 3rem 7.8rem;
-
-      flex-direction: row;
+      padding: 3rem 7.8rem;
     }
 
     article {
@@ -75,7 +75,7 @@ export const SayHello = styled(Link)`
 
     transition: .26s ease;
 
-    :hover {
+    &:hover {
       color: var(--yellow);
     }
 `
@@ -86,16 +86,17 @@ export const AsideCard = styled.aside`
   gap: 1rem;
 
   background-color: var(--white);
-
+  
   padding: 2rem;
 
   border-radius: 16px;
   border-bottom: 8px solid white;
-
+  
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-  @media (min-width: 768px) {
-    gap: 2.7rem;
+  
+  @media (min-width: 960px) {
+    gap: 1.8rem;
+    width: 48%;
   }
 `
 
@@ -114,7 +115,7 @@ export const FigureContainer = styled.figure`
 
     transition: .4s ease;
 
-    :hover {
+    &:hover {
       border: 2px solid var(--yellow);
       opacity: 87%;
     }
@@ -138,6 +139,7 @@ export const FigureContainer = styled.figure`
   }
 
   @media (min-width: 768px) {
+    
     div > h3 {
       font-size: 1.1rem;
     }
@@ -180,18 +182,77 @@ export const MyTechnologies = styled.div`
   }
 `
 
-export const Icons = styled.div`
+export const ContainerOfInfoCards = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 
-  font-size: 3rem;
+  @media (min-width: 769px) {
+    flex-direction: row;
+    gap: 3rem;
+  }
+`
+
+export const Icons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+
+  font-size: 1.3rem;
 
   color: var(--gray);
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
+    display: flex;
     flex-wrap: wrap;
 
     width: 450px;
+  }
+`
+
+export const AnotherInfoCard = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+
+  background-color: var(--white);
+  
+  padding: 2rem;
+
+  border-radius: 16px;
+  border-bottom: 8px solid white;
+  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  font-size: 1.1rem;
+
+  > li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding: .7rem;
+
+    color: var(--gray);
+
+    font-family: 'Inter', sans-serif;
+
+    border-radius: 12px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+
+  @media (min-width: 769px) {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+  }
+  
+  @media (min-width: 960px) {
+    gap: 1.8rem;
+    width: 48%;
   }
 `

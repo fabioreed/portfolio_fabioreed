@@ -80,7 +80,7 @@ export const TagLink = styled(Link)`
 
     font-family: 'Shadows Into Light', cursive;
 
-    :hover {
+    &:hover {
       color: var(--gray);
     }
 `

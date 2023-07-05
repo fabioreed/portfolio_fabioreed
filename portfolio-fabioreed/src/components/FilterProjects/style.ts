@@ -10,14 +10,20 @@ export const ContainerProjectsButton = styled.section`
 export const ButtonProject = styled.button`
   background-color: transparent;
   padding: .7rem .4rem;
-  
+
+  color: var(--primary-color);
+
+  transition: .4s ease;
+
+  &:hover {
+    background-color: var(--yellow);
+    border-radius: 6px;
+    color: var(--gray);
+  }
+
   @media (min-width: 769px) {
     font-size: 1.1rem;
 
-    :hover {
-      background-color: var(--black);
-      color: red;
-    }
   }
 `
 

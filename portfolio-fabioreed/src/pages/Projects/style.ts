@@ -105,7 +105,7 @@ export const Card = styled.li`
     line-height: 150%;
   }
 
-  :hover {
+  &:hover {
     background-color: #f2f2f2;
   }
 
@@ -134,7 +134,7 @@ export const TypeSection = styled.div`
 
     transition: .4s ease;
 
-    :hover {
+    &:hover {
       background-color: var(--primary-color);
       color: var(--white);
     }
@@ -156,7 +156,7 @@ export const LinkOfTheProject = styled.div`
 
   transition: .5s ease;
 
-  :hover {
+  &:hover {
     color: var(--gray);
   }
 

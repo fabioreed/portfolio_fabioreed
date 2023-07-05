@@ -34,11 +34,12 @@ export const HeaderContainer = styled.header`
 
     transition: .3s ease;
 
-    :hover {
+    &:hover {
       background-color: var(--yellow);
       color: var(--black);
     }
   }
+  
 
   @media (min-width: 768px) {
     padding: 1.7rem 8rem;
@@ -72,7 +73,7 @@ export const LinkTag = styled(Link)`
 
     transition: .4s ease;
 
-    :hover {
+    &:hover {
       font-weight: 600;
       font-size: .85rem;
       color: var(--yellow);

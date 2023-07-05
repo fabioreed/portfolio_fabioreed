@@ -19,7 +19,7 @@ export const ContactContainer = styled.main`
 
       transition: .2s ease;
       
-      :hover {
+      &:hover {
         color: var(--yellow);
       }
     }

@@ -71,7 +71,7 @@ export const TechnologiesContainer = styled.article`
 
     transition: .4s ease;
 
-    :hover {
+    &:hover {
       color: var(--primary-color);
       
     }
@@ -131,7 +131,7 @@ export const PDFContainer = styled.div`
   
       transition: .4s ease;
   
-      :hover {
+      &:hover {
         background-color: var(--yellow);
         color: var(--black);
       }
@@ -152,7 +152,7 @@ export const PDFContainer = styled.div`
 
       transition: .4s ease;
 
-      :hover {
+      &:hover {
         color: var(--yellow);
         border-bottom: 1.2px solid var(--yellow);
       }
@@ -192,7 +192,7 @@ export const MediaSocial = styled(Link)`
   font-size: 1.7rem;
   color: var(--gray);
 
-  :hover {
+  &:hover {
     color: var(--primary-color);
   }
 `

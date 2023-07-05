@@ -1,8 +1,7 @@
 import { useContext } from 'react'
 import { UserContext } from '../../providers/UserContext'
 import { ContactContainer, RedesSociaisContato } from './style'
-// import { GoMarkGithub } from 'react-icons/go'
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { MediaSocial } from '../../pages/Home/style'
 import { Link } from 'react-router-dom'
 
@@ -27,7 +26,7 @@ const ContactModal = () => {
       </div>
       <RedesSociaisContato>
         <MediaSocial to='https://www.linkedin.com/in/fabioreed/' target="_blank"><FaLinkedin /></MediaSocial>
-        {/* <MediaSocial to='https://github.com/fabioreed' target="_blank"><GoMarkGithub /></MediaSocial> */}
+        <MediaSocial to='https://github.com/fabioreed' target="_blank"><FaGithub /></MediaSocial>
       </RedesSociaisContato>
     </ContactContainer>
   )
