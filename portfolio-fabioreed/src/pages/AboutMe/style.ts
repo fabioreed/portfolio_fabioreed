@@ -230,48 +230,6 @@ export const AnotherInfoCard = styled.ul`
   font-size: 1.1rem;
 
   width: 100%;
-  
-  /* li {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-
-    font-family: 'Quicksand', sans-serif;
-
-    padding: .7rem;
-
-    color: var(--gray);
-
-    border-radius: 12px;
-    
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-    transition: .4s ease;
-
-    @media (min-width: 769px) {
-      &:hover:nth-child(1) {
-        color: var(--whatsapp);
-        border: 1px solid var(--whatsapp);
-      }
-      &:hover:nth-child(2) {
-        color: var(--linkedin);
-        border: 1px solid var(--linkedin);
-      }
-      &:hover:nth-child(3) {
-        color: var(--gmail);
-        border: 1px solid var(--gmail);
-      }
-    }
-
-    @media (min-width: 769) {
-      padding: 2rem;
-    }
-  }
-  
-  @media (min-width: 960px) {
-    gap: 1.8rem;
-    width: 48%;
-  } */
 `
 
 export const LinkCardInfo = styled(Link)`
@@ -294,15 +252,17 @@ export const LinkCardInfo = styled(Link)`
     @media (min-width: 769px) {
       &:hover:nth-child(1) {
         color: var(--whatsapp);
-        border: 1px solid var(--whatsapp);
+        border: 1.4px solid var(--whatsapp);
       }
+
       &:hover:nth-child(2) {
         color: var(--linkedin);
-        border: 1px solid var(--linkedin);
+        border: 1.4px solid var(--linkedin);
       }
+
       &:hover:nth-child(3) {
         color: var(--gmail);
-        border: 1px solid var(--gmail);
+        border: 1.4px solid var(--gmail);
       }
     }
 
