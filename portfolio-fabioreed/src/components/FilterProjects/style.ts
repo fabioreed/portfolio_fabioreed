@@ -13,17 +13,23 @@ export const ButtonProject = styled.button`
 
   color: var(--primary-color);
 
-  transition: .4s ease;
+  /* transition: .2s ease; */
+
+  &.selected {
+    border-bottom: 1.4px solid var(--gray);
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+
+  }
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* border-radius: 6px; */
     color: var(--gray);
   }
 
   @media (min-width: 769px) {
     font-size: 1.1rem;
-
   }
 `
 
