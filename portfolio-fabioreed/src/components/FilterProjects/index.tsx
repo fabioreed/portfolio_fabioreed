@@ -3,7 +3,7 @@ import { ContainerProjectsButton, ButtonProject } from './style'
 import { UserContext } from '../../providers/UserContext'
 
 const FilterProjects = () => {
-  const { category, setCategory } = useContext(UserContext)
+  const { setCategory } = useContext(UserContext)
   const [selectedCategory, setSelectedCategory] = useState('all')
   
   const handleFilter = (category: string) => {
