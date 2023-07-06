@@ -111,11 +111,19 @@ export const Card = styled.li`
   }
 
   @media (min-width: 768px) {
-    width: 462px;
+    width: 100%;
 
     p {
       font-size: .7rem;
     }
+  }
+
+  @media (min-width: 1229px) {
+    width: 48%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 560px;
   }
 `
 
