@@ -58,7 +58,7 @@ I'm passionate about programming and I am a frontend developer who is proficient
               <FaLinkedin />
               <span>My LinkedIn</span>
             </LinkCardInfo>
-            <LinkCardInfo to=''>
+            <LinkCardInfo to='mailto:fabioeeereed@gmail.com'>
               <BiLogoGmail />
               <span>fabioeeereed@gmail.com</span>
             </LinkCardInfo>
