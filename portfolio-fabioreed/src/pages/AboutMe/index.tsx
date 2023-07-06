@@ -1,5 +1,5 @@
 import Header from '../../components/Header'
-import { AnotherInfoCard, AsideCard, ContainerAboutMe, FigureContainer, Icons, MyTechnologies, SayHello, ContainerOfInfoCards } from './style'
+import { AnotherInfoCard, AsideCard, ContainerAboutMe, FigureContainer, Icons, MyTechnologies, SayHello, ContainerOfInfoCards, LinkCardInfo } from './style'
 import Me from '../../assets/Meme.jpg'
 import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
 import { SiTypescript, SiCsswizardry, SiJavascript, SiStyledcomponents, SiMui, SiRedux, SiExpress, SiPostgresql } from 'react-icons/si'
@@ -50,18 +50,18 @@ I'm passionate about programming and I am a frontend developer who is proficient
           </AsideCard>
           
           <AnotherInfoCard>
-            <li>
+            <LinkCardInfo to='https://wa.me/5583986391165' target="_blank">
               <BiLogoWhatsapp />
               <span>83 9 8639-1165</span>
-            </li>
-            <li>
+            </LinkCardInfo>
+            <LinkCardInfo to='https://www.linkedin.com/in/fabioreed/' target="_blank">
               <FaLinkedin />
               <span>My LinkedIn</span>
-            </li>
-            <li>
+            </LinkCardInfo>
+            <LinkCardInfo to=''>
               <BiLogoGmail />
               <span>fabioeeereed@gmail.com</span>
-            </li>
+            </LinkCardInfo>
           </AnotherInfoCard>
         </ContainerOfInfoCards>
       </footer>

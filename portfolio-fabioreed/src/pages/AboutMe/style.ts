@@ -228,8 +228,10 @@ export const AnotherInfoCard = styled.ul`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   font-size: 1.1rem;
+
+  width: 100%;
   
-  li {
+  /* li {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -269,5 +271,47 @@ export const AnotherInfoCard = styled.ul`
   @media (min-width: 960px) {
     gap: 1.8rem;
     width: 48%;
+  } */
+`
+
+export const LinkCardInfo = styled(Link)`
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    font-family: 'Quicksand', sans-serif;
+
+    padding: .7rem;
+
+    color: var(--gray);
+
+    border-radius: 12px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: .4s ease;
+
+    @media (min-width: 769px) {
+      &:hover:nth-child(1) {
+        color: var(--whatsapp);
+        border: 1px solid var(--whatsapp);
+      }
+      &:hover:nth-child(2) {
+        color: var(--linkedin);
+        border: 1px solid var(--linkedin);
+      }
+      &:hover:nth-child(3) {
+        color: var(--gmail);
+        border: 1px solid var(--gmail);
+      }
+    }
+
+    @media (min-width: 769) {
+      padding: 2rem;
+    }
+  
+  @media (min-width: 960px) {
+    gap: 1.8rem;
+    width: 100%;
   }
 `
