@@ -59,7 +59,7 @@ export const List = styled.ul`
 export const Card = styled.li`
   display: flex;
   flex-direction: column;
-  gap: .8rem;
+  gap: .4rem;
   flex-shrink: 0;
 
   padding: 1rem;
@@ -97,6 +97,7 @@ export const Card = styled.li`
 
   img {
     width: 100%;
+    border-radius: 8px;
   }
 
   p {
@@ -110,7 +111,7 @@ export const Card = styled.li`
   }
 
   @media (min-width: 768px) {
-    width: 300px;
+    width: 462px;
 
     p {
       font-size: .7rem;

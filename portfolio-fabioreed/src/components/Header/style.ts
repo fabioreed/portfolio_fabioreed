@@ -52,7 +52,7 @@ export const HeaderContainer = styled.header`
 
     ul {
       display: flex;
-      gap: 1rem;
+      gap: 3rem;
     }
     
     .buttonContact {

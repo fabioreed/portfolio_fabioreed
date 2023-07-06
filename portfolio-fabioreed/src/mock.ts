@@ -2,6 +2,10 @@ import burguer from './assets/Burgueria Kenzie.png'
 import nukenzie from './assets/nukenzie.jpg'
 import kenziehub from './assets/kenziehub.jpg'
 import godonate from './assets/godonate.jpg'
+import starbucks from './assets/starbucks.png'
+import pepsi from './assets/pepsi.png'
+import netflix from './assets/netflix.png.jpg'
+import api from './assets/api.png'
 
 const projects = [
   {
@@ -42,7 +46,7 @@ const projects = [
   },
   {
     'name': 'Starbucks - Landing Page',
-    'img': '',
+    'img': starbucks,
     'category': 'frontend',
     'description': '',
     'technologies': ['HTML', 'CSS'],
@@ -51,7 +55,7 @@ const projects = [
   },
   {
     'name': 'Pepsi - Landing Page',
-    'img': '',
+    'img': pepsi,
     'category': 'frontend',
     'description': '',
     'technologies': ['HTML', 'CSS'],
@@ -60,16 +64,16 @@ const projects = [
   },
   {
     'name': 'Netflix - using API',
-    'img': '',
+    'img': netflix,
     'category': 'frontend',
     'description': '',
     'technologies': ['React', 'JS', 'CSS'],
-    'link': '',
+    'link': 'https://github.com/fabioreed/NetflixClone',
     'github': 'https://github.com/fabioreed/NetflixClone'
   },
   {
     'name': 'Maps - using API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': '',
     'technologies': ['HTML', 'JS', 'CSS'],
@@ -78,7 +82,7 @@ const projects = [
   },
   {
     'name': 'Market API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "We received a request to create a REST API. This API will be used to organize the stock of a startup in the testing process that intends to become a network of autonomous markets (Smart Store). Today the market works with only two types of products: food and cleaning. As we will be controlling the market's stock, our application must have routes for creating, listing, updating and deleting products.",
     'technologies': ['Typescript'],
@@ -87,7 +91,7 @@ const projects = [
   },
   {
     'name': 'Movies TypeORM API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "The goal is to develop an API that will be used on a streaming platform. This API will be intended to manage the collection of available movies.",
     'technologies': ['Typescript', 'PostgreSQL', 'TypeORM', 'Zod'],
@@ -96,47 +100,56 @@ const projects = [
   },
   {
     'name': 'CRUD Admin API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "The company you work for needs to create an MVP (Minimum Viable Product) of an API that controls users through a CRUD. This API also needs to have access control, where some resources can only be accessed by users who are logged in to the application, and other resources can only be accessed by users who are logged in and have administrator permissions.",
     'technologies': ['Typescript', 'PostgresSQL'],
-    'link': '',
+    'link': 'https://github.com/fabioreed/crud_admin',
     'github': 'https://github.com/fabioreed/crud_admin'
   },
   {
     'name': 'Kimoveis - Real Estate',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "The owner of Kimóveis real estate hired his company to develop an application to manage his services. Through the application, it should be possible to register properties and users interested in acquiring properties. In addition, it should be possible to schedule and consult visit times to properties available in the real estate database.",
     'technologies': ['Typescript', 'PostgresSQL', 'TypeORM', 'Zod'],
-    'link': '',
+    'link': 'https://github.com/fabioreed/crud_admin',
     'github': 'https://github.com/fabioreed/crud_admin'
   },
   {
     'name': 'PetKare - Python API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "",
     'technologies': ['Python', 'ORM', 'Django', 'Rest Framework'],
-    'link': '',
+    'link': 'https://github.com/fabioreed/pet-kare-fabioreed',
     'github': 'https://github.com/fabioreed/pet-kare-fabioreed'
   },
   {
     'name': 'Kenzie Buster - Python API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "",
     'technologies': ['Python', 'ORM', 'Django', 'Rest Framework'],
-    'link': '',
+    'link': 'https://github.com/fabioreed/m5-kenzie-buster-fabioreed',
     'github': 'https://github.com/fabioreed/m5-kenzie-buster-fabioreed'
   },
   {
     'name': 'BandKamp - Python API',
-    'img': '',
+    'img': api,
     'category': 'backend',
     'description': "",
     'technologies': ['Python', 'ORM', 'Django', 'Rest Framework'],
-    'link': '',
+    'link': 'https://github.com/fabioreed/bandkamp_api',
+    'github': 'https://github.com/fabioreed/bandkamp_api'
+  },
+  {
+    'name': 'Disney - Clone',
+    'img': 'https://user-images.githubusercontent.com/99282728/174812449-1fa6061e-3abd-4046-bdca-895638bd1ebd.png',
+    'category': 'frontend',
+    'description': "",
+    'technologies': ['Javascript', 'React', 'CSS', 'Firebase'],
+    'link': 'https://github.com/fabioreed/Disney-Clone-master',
     'github': 'https://github.com/fabioreed/bandkamp_api'
   }
 ]

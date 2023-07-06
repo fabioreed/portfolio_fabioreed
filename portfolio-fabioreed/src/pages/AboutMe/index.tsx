@@ -16,7 +16,7 @@ const AboutMe = () => {
         <article>
           <h1>About Me</h1>
           <p>My name is Fabio, I'm 28 and I live in Brazil. I'm married to my beautiful English teacher Eden, who helped me to reach level C1. 
-I'm passionate about programming and I am a frontend developer who is proficient in the languages React, Typescript, Css (Mobile First), Javascript, Node.</p>
+I'm passionate about programming and I am a frontend developer who is proficient in the languages React, Typescript, Css (Mobile First), Javascript, and Node.</p>
           <SayHello to='https://wa.me/5583986391165' target="_blank"><BsArrowRight />Say Hello</SayHello>
         </article>
         <ContainerOfInfoCards>

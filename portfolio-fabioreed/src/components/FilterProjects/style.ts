@@ -15,14 +15,15 @@ export const ButtonProject = styled.button`
 
   &.selected {
     border-bottom: 1.4px solid var(--gray);
-    border-radius: 0;
+    border-radius: 3px 3px 0 0;
     background-color: rgba(0, 0, 0, 0.03);
-
+    color: var(--gray);
   }
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.03);
     color: var(--gray);
+    border-radius: 6px 6px 0 0;
   }
 
   @media (min-width: 769px) {

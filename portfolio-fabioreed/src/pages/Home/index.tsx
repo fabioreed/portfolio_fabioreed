@@ -4,11 +4,10 @@ import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
 import { BsCloudArrowDownFill } from 'react-icons/bs'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import Me from '../../assets/MeBlackAndWhite.jpg'
+import Me from '../../assets/fabiome.png'
 import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
 import CurriculoPt from '../../assets/Fabio Luiz - Curriculo.docx.pdf'
-// import { Footer } from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -50,7 +49,6 @@ const Home = () => {
           </SocialMediaContainer>
         </PictureHome>
       </SectionnContainerHome>
-      {/* <Footer /> */}
     </MainContainerHome>
   )
 }

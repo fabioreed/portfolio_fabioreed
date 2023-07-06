@@ -27,6 +27,8 @@ export const ContactContainer = styled.main`
 
   display: flex;
   flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
   gap: 1rem;
 
   position: fixed;
@@ -59,5 +61,4 @@ export const ContactContainer = styled.main`
 export const RedesSociaisContato = styled.section`
   display: flex;
   gap: 3rem;
-  /* justify-content: space-between; */
 `
