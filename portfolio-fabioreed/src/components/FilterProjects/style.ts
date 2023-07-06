@@ -13,8 +13,6 @@ export const ButtonProject = styled.button`
 
   color: var(--primary-color);
 
-  /* transition: .2s ease; */
-
   &.selected {
     border-bottom: 1.4px solid var(--gray);
     border-radius: 0;
@@ -24,7 +22,6 @@ export const ButtonProject = styled.button`
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.02);
-    /* border-radius: 6px; */
     color: var(--gray);
   }
 
