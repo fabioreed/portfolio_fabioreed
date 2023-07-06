@@ -27,24 +27,7 @@ export const ContainerAboutMe = styled.main`
       font-size: .9rem;
     }
 
-    span {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-
-      font-size: 1.3rem;
-      color: var(--primary-color);
-      
-      cursor: pointer;
-      
-      Link {
-        text-decoration: none;
-      }
-
-      &:hover {
-        color: var(--yellow);
-      }
-    }
+    
   }
 
   @media (min-width: 768px) {
@@ -64,19 +47,37 @@ export const ContainerAboutMe = styled.main`
       }
 
       span {
-        font-size: 1.7rem;
+        font-size: 1.1rem;
       }
     }
   }
 `
 
 export const SayHello = styled(Link)`
-    color: var(--primary-color);
+    display: flex;
+    gap: .3rem;
+    align-items: center;
 
+    color: var(--white);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
     transition: .26s ease;
 
+    width: fit-content;
+    padding: .9rem .7rem;
+
+    border-radius: 8px 2px;
+
+    color: var(--white);
+
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+    
     &:hover {
-      color: var(--yellow);
+      background-color: var(--yellow);
+      color: var(--black);
     }
 `
 
@@ -219,7 +220,7 @@ export const AnotherInfoCard = styled.ul`
 
   background-color: var(--white);
   
-  padding: 2rem;
+  padding: 1rem;
 
   border-radius: 16px;
   border-bottom: 8px solid white;
@@ -227,27 +228,41 @@ export const AnotherInfoCard = styled.ul`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   font-size: 1.1rem;
-
-  > li {
+  
+  li {
     display: flex;
     align-items: center;
     gap: 2rem;
+
+    font-family: 'Quicksand', sans-serif;
 
     padding: .7rem;
 
     color: var(--gray);
 
-    font-family: 'Inter', sans-serif;
-
     border-radius: 12px;
     
     border: 1px solid rgba(0, 0, 0, 0.08);
     cursor: pointer;
-  }
+    transition: .4s ease;
 
-  @media (min-width: 769px) {
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.02);
+    @media (min-width: 769px) {
+      &:hover:nth-child(1) {
+        color: var(--whatsapp);
+        border: 1px solid var(--whatsapp);
+      }
+      &:hover:nth-child(2) {
+        color: var(--linkedin);
+        border: 1px solid var(--linkedin);
+      }
+      &:hover:nth-child(3) {
+        color: var(--gmail);
+        border: 1px solid var(--gmail);
+      }
+    }
+
+    @media (min-width: 769) {
+      padding: 2rem;
     }
   }
   

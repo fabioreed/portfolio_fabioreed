@@ -16,7 +16,7 @@ export const ButtonProject = styled.button`
   transition: .4s ease;
 
   &:hover {
-    background-color: var(--yellow);
+    background-color: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
     color: var(--gray);
   }

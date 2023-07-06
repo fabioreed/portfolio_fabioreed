@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
     --yellow: #F8CD53;
     --green: #6FD660;
     --black: #181818;
+    --whatsapp: #25D366;
+    --linkedin: #0077B5;
+    --gmail: #EA4335;
   }
 
   body {
