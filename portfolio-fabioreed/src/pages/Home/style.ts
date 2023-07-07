@@ -129,11 +129,13 @@ export const PDFContainer = styled.div`
   
       color: var(--white);
   
-      transition: .4s ease;
+      transition: .2s ease;
+      box-shadow: .6px .7px 1px var(--yellow);
   
       &:hover {
         background-color: var(--yellow);
         color: var(--black);
+        box-shadow: .6px .7px 1px var(--primary-color);
       }
     }
 
@@ -150,7 +152,7 @@ export const PDFContainer = styled.div`
       font-weight: 600;
       font-size: .8rem;
 
-      transition: .4s ease;
+      transition: .2s ease;
 
       &:hover {
         color: var(--yellow);

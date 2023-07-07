@@ -123,7 +123,7 @@ export const Card = styled.li`
   }
 
   @media (min-width: 1440px) {
-    width: 560px;
+    width: 48%;
   }
 `
 

@@ -8,6 +8,8 @@ import Me from '../../assets/fabiomdl.png'
 import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
 import CurriculoPt from '../../assets/Fabio Luiz - Curriculo.docx.pdf'
+// import TechnologiesChart from '../../components/TechnologiesChart'
+// import projects from '../../mock'
 
 const Home = () => {
   return (
@@ -49,6 +51,8 @@ const Home = () => {
           </SocialMediaContainer>
         </PictureHome>
       </SectionnContainerHome>
+      {/* <TechnologiesChart projects={projects} /> */}
+
     </MainContainerHome>
   )
 }

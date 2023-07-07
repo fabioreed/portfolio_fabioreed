@@ -32,11 +32,13 @@ export const HeaderContainer = styled.header`
     color: var(--white);
     font-size: .8rem;
 
-    transition: .3s ease;
+    transition: .2s ease;
+    box-shadow: .6px .7px 1px var(--yellow);
 
     &:hover {
       background-color: var(--yellow);
       color: var(--black);
+      box-shadow: .6px .7px 1px var(--primary-color);
     }
   }
   

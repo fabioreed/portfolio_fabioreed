@@ -45,6 +45,15 @@ const projects = [
     'github': 'https://github.com/Go-Donate/Go-Donate'
   },
   {
+    'name': 'Disney - Clone',
+    'img': 'https://user-images.githubusercontent.com/99282728/174812449-1fa6061e-3abd-4046-bdca-895638bd1ebd.png',
+    'category': 'frontend',
+    'description': "",
+    'technologies': ['Javascript', 'React', 'CSS', 'Firebase'],
+    'link': 'https://github.com/fabioreed/Disney-Clone-master',
+    'github': 'https://github.com/fabioreed/bandkamp_api'
+  },
+  {
     'name': 'Starbucks - Landing Page',
     'img': starbucks,
     'category': 'frontend',
@@ -141,15 +150,6 @@ const projects = [
     'description': "",
     'technologies': ['Python', 'ORM', 'Django', 'Rest Framework'],
     'link': 'https://github.com/fabioreed/bandkamp_api',
-    'github': 'https://github.com/fabioreed/bandkamp_api'
-  },
-  {
-    'name': 'Disney - Clone',
-    'img': 'https://user-images.githubusercontent.com/99282728/174812449-1fa6061e-3abd-4046-bdca-895638bd1ebd.png',
-    'category': 'frontend',
-    'description': "",
-    'technologies': ['Javascript', 'React', 'CSS', 'Firebase'],
-    'link': 'https://github.com/fabioreed/Disney-Clone-master',
     'github': 'https://github.com/fabioreed/bandkamp_api'
   }
 ]

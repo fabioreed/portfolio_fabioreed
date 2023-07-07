@@ -62,22 +62,24 @@ export const SayHello = styled(Link)`
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    transition: .26s ease;
-
+    
     width: fit-content;
     padding: .9rem .7rem;
-
+    
     border-radius: 8px 2px;
-
+    
     color: var(--white);
-
+    
     background-color: var(--primary-color);
-
+    
+    transition: .26s ease;
+    box-shadow: .6px .7px 1px var(--yellow);
     cursor: pointer;
     
     &:hover {
       background-color: var(--yellow);
       color: var(--black);
+      box-shadow: .6px .7px 1px var(--primary-color);
     }
 `
 
