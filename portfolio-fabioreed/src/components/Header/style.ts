@@ -54,7 +54,7 @@ export const HeaderContainer = styled.header`
 
     ul {
       display: flex;
-      gap: 3rem;
+      gap: 2.4rem;
     }
     
     .buttonContact {
@@ -73,11 +73,11 @@ export const LinkTag = styled(Link)`
     list-style: none;
     text-decoration: none;
 
-    transition: .4s ease;
+    transition: .2s ease;
 
     &:hover {
       font-weight: 600;
-      font-size: .85rem;
+      font-size: .93rem;
       color: var(--yellow);
 
       transform: scaleX(-10px, -20px);

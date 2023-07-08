@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import Header from "../../components/Header"
-import { Card, ContainerProjects, LinkOfTheProject, LinkToTheProject, List, TitleAndSpan, TypeSection } from "./style"
+import Header from '../../components/Header'
+import { Card, ContainerProjects, LinkOfTheProject, LinkToTheProject, List, TitleAndSpan, TypeSection } from './style'
 import { BsArrowUpLeftCircleFill } from 'react-icons/bs'
 import projects from '../../mock'
 import { CiCoffeeCup } from 'react-icons/ci'
-import FilterProjects from "../../components/FilterProjects"
+import FilterProjects from '../../components/FilterProjects'
 import { UserContext } from '../../providers/UserContext'
 
 const Projects = () => {
