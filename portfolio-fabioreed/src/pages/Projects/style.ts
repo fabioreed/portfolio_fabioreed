@@ -74,6 +74,8 @@ export const Card = styled.li`
 
   background-color: var(--white);
 
+  cursor: pointer;
+
   .card.typescript {
     border-top: 1px solid blue;
   }
@@ -134,9 +136,9 @@ export const TypeSection = styled.div`
 
   span {
     border-radius: 5px;
-    padding: .3rem;
+    padding: .1rem .2rem;
 
-    font-size: .7rem;
+    font-size: .5rem;
     color: var(--black);
 
     background-color: var(--yellow);
@@ -144,12 +146,12 @@ export const TypeSection = styled.div`
     transition: .4s ease;
 
     &:hover {
-      background-color: var(--primary-color);
+      background-color: var(--black);
       color: var(--white);
     }
 
     @media (min-width: 768px) {
-      font-size: .8rem;
+      font-size: .6rem;
     }
   }
 `
@@ -157,16 +159,22 @@ export const TypeSection = styled.div`
 export const LinkOfTheProject = styled.div`
   display: flex;
   align-items: center;
-  gap: .7rem;
+  gap: .3rem;
   cursor: pointer;
 
-  color: var(--primary-color);
+  color: var(--white);
   font-size: 1.2rem;
+
+  background-color: var(--primary-color);
+  width: max-content;
+  padding: .3rem .4rem;
 
   transition: .5s ease;
 
+  border-radius: 6px;
+
   &:hover {
-    color: var(--gray);
+    background-color: var(--black);
   }
 
   @media (min-width: 768px) {
@@ -176,6 +184,65 @@ export const LinkOfTheProject = styled.div`
 
 export const LinkToTheProject = styled(Link)`
     font-size: .7rem;
-    color: var(--gray);
+    color: var(--white);
     line-height: 150%;
+`
+
+export const ModalProject = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+`
+
+export const ModalSection = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+
+  width: 96%;
+  max-width: 760px;
+  height: max-content;
+  padding: 1rem;
+
+  border-radius: 12px;
+
+  position: relative;
+
+  z-index: 0;
+
+  animation: slideIn 0.4s forwards;
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(80%);
+    } to {
+      transform: translateX(0);
+    }
+  }
+`
+
+export const ModalCloseBtn = styled.button`
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+  font-size: 1.2rem;
+
+  padding: .3rem .7rem;
+  border-radius: 50%;
+
+  &:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
 `
