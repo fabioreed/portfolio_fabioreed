@@ -129,6 +129,21 @@ export const Card = styled.li`
   }
 `
 
+export const CardGitHub = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  flex-shrink: 0;
+
+  padding: 1rem;
+  width: 300px;
+  height: max-content;
+
+  background-color: var(--white);
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+`
+
 export const TypeSection = styled.div`
   display: flex;
   flex-wrap: wrap;

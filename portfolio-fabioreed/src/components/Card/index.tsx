@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import {
   Card,
+  CardGitHub,
   LinkOfTheProject,
   LinkToTheProject,
   TypeSection,
@@ -34,6 +35,10 @@ export const Carda = () => {
         repositoriesGitHub.map((repo: RepoType) => (
           <Card key={repo.id}>
             <h3>{repo.name}</h3>
+            <span>{repo.description}</span>
+            <TypeSection>
+                <span>{repo.language}</span>
+            </TypeSection>
             <p>{repo.description}</p>
             <LinkOfTheProject>
               <BsArrowUpLeftCircleFill />
@@ -42,27 +47,29 @@ export const Carda = () => {
               </LinkToTheProject>
             </LinkOfTheProject>
           </Card>
+
         ))) : (
-      filteredProjects.map((project: ProjectType, index: number) => (
-        <Card
-          key={index}
-          className={project.technologies.includes('Typescript') ? 'typescript' : 'javascript'}
-        >
-          <h3>{project.name}</h3>
-          <img src={project.img} alt={project.name} />
-          <TypeSection>
-            {project.technologies.map((tech: string, index: number) => (
-              <span key={index}>{tech}</span>
-            ))}
-          </TypeSection>
-          <p>{project.description}</p>
-          <LinkOfTheProject>
-            <BsArrowUpLeftCircleFill />
-            <LinkToTheProject to={project.link} target="_blank">
-              <b>Visit project</b>
-            </LinkToTheProject>
-          </LinkOfTheProject>
-        </Card>
+
+        filteredProjects.map((project: ProjectType, index: number) => (
+          <Card
+            key={index}
+            className={project.technologies.includes('Typescript') ? 'typescript' : 'javascript'}
+          >
+            <h3>{project.name}</h3>
+            <img src={project.img} alt={project.name} />
+            <TypeSection>
+              {project.technologies.map((tech: string, index: number) => (
+                <span key={index}>{tech}</span>
+              ))}
+            </TypeSection>
+            <p>{project.description}</p>
+            <LinkOfTheProject>
+              <BsArrowUpLeftCircleFill />
+              <LinkToTheProject to={project.link} target="_blank">
+                <b>Visit project</b>
+              </LinkToTheProject>
+            </LinkOfTheProject>
+          </Card>
         ))
       )}
     </>
