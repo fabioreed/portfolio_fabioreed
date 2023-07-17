@@ -14,10 +14,10 @@ export const ButtonProject = styled.button`
   color: var(--primary-color);
 
   &.selected {
-    border-bottom: 1.4px solid var(--gray);
+    border-bottom: 1.4px solid rgba(0, 0, 0, 0.08);
     border-radius: 3px 3px 0 0;
     background-color: rgba(0, 0, 0, 0.03);
-    color: var(--gray);
+    color: var(--yellow);
   }
 
   &:hover {

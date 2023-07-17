@@ -16,12 +16,34 @@ interface ProjectType {
   description: string
 }
 
+interface RepoType {
+  id: number
+  name: string
+  language: string
+  description: string
+  html_url: string
+  homepage: string
+}
+
 export const Carda = () => {
-  const { filteredProjects } = useContext(UserContext)
+  const { filteredProjects, selectedCategory, repositoriesGitHub } = useContext(UserContext)
 
   return (
     <>
-      {filteredProjects.map((project: ProjectType, index: number) => (
+      {selectedCategory === 'github' ? (
+        repositoriesGitHub.map((repo: RepoType) => (
+          <Card key={repo.id}>
+            <h3>{repo.name}</h3>
+            <p>{repo.description}</p>
+            <LinkOfTheProject>
+              <BsArrowUpLeftCircleFill />
+              <LinkToTheProject to={repo.html_url} target="_blank">
+                <b>Visit repository</b>
+              </LinkToTheProject>
+            </LinkOfTheProject>
+          </Card>
+        ))) : (
+      filteredProjects.map((project: ProjectType, index: number) => (
         <Card
           key={index}
           className={project.technologies.includes('Typescript') ? 'typescript' : 'javascript'}
@@ -41,7 +63,8 @@ export const Carda = () => {
             </LinkToTheProject>
           </LinkOfTheProject>
         </Card>
-      ))}
+        ))
+      )}
     </>
   )
 }        
