@@ -4,7 +4,11 @@ export const ContainerProjectsButton = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: .2rem;
+
+  @media (min-width: 769px) {
+    gap: 2rem;
+  }
 `
 
 export const ButtonProject = styled.button`
@@ -16,8 +20,8 @@ export const ButtonProject = styled.button`
   &.selected {
     border-bottom: 1.4px solid rgba(0, 0, 0, 0.08);
     border-radius: 3px 3px 0 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    color: var(--yellow);
+    /* background-color: rgba(0, 0, 0, 0.01); */
+    color: var(--gray);
   }
 
   &:hover {
