@@ -4,14 +4,13 @@ import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
 import { BsCloudArrowDownFill } from 'react-icons/bs'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import Me from '../../assets/fabiomdl.png'
+import { userData } from '../../utils/userData'
 import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
 import CurriculoPt from '../../assets/Fabio Luiz - Curriculo.docx.pdf'
-// import TechnologiesChart from '../../components/TechnologiesChart'
-// import projects from '../../mock'
 
-const Home = () => {
+const Home = (): JSX.Element => {
+
   return (
     <MainContainerHome>
       <Header />
@@ -44,14 +43,13 @@ const Home = () => {
           </ResumeContainer>
         </div>
         <PictureHome>
-          <img src={Me} />
+          <img src={`https://github.com/${userData.githubUser}.png`} />
           <SocialMediaContainer>
-            <MediaSocial to='https://www.linkedin.com/in/fabioreed/' target="_blank"><FaLinkedin /></MediaSocial>
-            <MediaSocial to='https://github.com/fabioreed' target="_blank"><FaGithub /></MediaSocial>
+            <MediaSocial to={`https://www.linkedin.com/in/${userData.linkedinUser}/`} target="_blank"><FaLinkedin /></MediaSocial>
+            <MediaSocial to={`https://github.com/${userData.linkedinUser}`} target="_blank"><FaGithub /></MediaSocial>
           </SocialMediaContainer>
         </PictureHome>
       </SectionnContainerHome>
-      {/* <TechnologiesChart projects={projects} /> */}
 
     </MainContainerHome>
   )
