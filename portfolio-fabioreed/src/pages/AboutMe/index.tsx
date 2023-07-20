@@ -1,7 +1,8 @@
 import Header from '../../components/Header'
 import { AnotherInfoCard, AsideCard, ContainerAboutMe, FigureContainer, Icons, MyTechnologies, SayHello, ContainerOfInfoCards, LinkCardInfo } from './style'
 import Me from '../../assets/Meme.jpg'
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
+import { FaReact, FaNodeJs, FaPython, FaFigma } from 'react-icons/fa'
+import { TbBrandNextjs } from 'react-icons/tb'
 import { SiTypescript, SiCsswizardry, SiJavascript, SiStyledcomponents, SiMui, SiRedux, SiExpress, SiPostgresql } from 'react-icons/si'
 import { BiLogoGmail, BiLogoWhatsapp } from 'react-icons/bi'
 import { BsArrowRight, BsGit } from 'react-icons/bs'
@@ -38,6 +39,8 @@ I'm passionate about programming and I am a frontend developer who is proficient
                 <SiJavascript />
                 <SiStyledcomponents />
                 <SiCsswizardry />
+                <TbBrandNextjs />
+                <FaFigma />
                 <SiMui />
                 <SiRedux />
                 <BsGit />

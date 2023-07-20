@@ -7,9 +7,17 @@ export const HeaderContainer = styled.header`
    align-items: center;
 
     div {
+      display: flex;
+      gap: 1rem;
+
       h3 {
         font-size: 1.4rem;
         font-weight: bold;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 42px;
       }
 
       span {
@@ -49,6 +57,10 @@ export const HeaderContainer = styled.header`
     div {
       h3 {
         font-size: 1.7rem;
+      }
+
+      img {
+        display: none;
       }
     }
 

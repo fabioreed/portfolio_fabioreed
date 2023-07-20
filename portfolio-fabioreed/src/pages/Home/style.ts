@@ -38,13 +38,13 @@ export const SectionnContainerHome = styled.section`
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     padding: 1.7rem 8rem;
 
     div {
-      width: 50%;
+      width: 100%;
 
       h1 {
         font-size: 2.4rem;

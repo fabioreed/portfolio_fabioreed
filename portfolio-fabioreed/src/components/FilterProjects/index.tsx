@@ -3,7 +3,7 @@ import { ContainerProjectsButton, ButtonProject } from './style'
 import { UserContext } from '../../providers/UserContext'
 
 const FilterProjects = () => {
-  const { setCategory, selectedCategory, setSelectedCategory } = useContext(UserContext)
+  const { setCategory, selectedCategory, setSelectedCategory, repositoriesGitHub } = useContext(UserContext)
 
   const handleFilter = (category: string) => {
     setCategory(category)
@@ -28,7 +28,7 @@ const FilterProjects = () => {
         onClick={() => handleFilter('github')}
         className={selectedCategory === 'github' ? 'selected' : '' }
       >
-        Github Repositories
+        Github Repositories +{repositoriesGitHub.length}
       </ButtonProject>
     </ContainerProjectsButton>
   )

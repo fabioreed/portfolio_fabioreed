@@ -3,7 +3,8 @@ import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
 import { BsCloudArrowDownFill } from 'react-icons/bs'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { FaLinkedin, FaGithub, FaFigma } from 'react-icons/fa'
 import { userData } from '../../utils/userData'
 import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
@@ -35,6 +36,12 @@ const Home = (): JSX.Element => {
               </div>
               <div>
                 <DiCss3 />
+              </div>
+              <div>
+                <FaFigma />
+              </div>
+              <div>
+                <TbBrandNextjs />
               </div>
               <div>
                 <FaNodeJs />
