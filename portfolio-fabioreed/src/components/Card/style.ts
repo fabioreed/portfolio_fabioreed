@@ -64,7 +64,6 @@ export const Card = styled.li`
 
   padding: 1rem;
   width: 290px;
-  height: max-content;
 
   border-radius: 1rem;
 
@@ -97,15 +96,36 @@ export const Card = styled.li`
     cursor: pointer;
   }
 
+  /* Estilizando a barra de rolagem */
+/* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+::-webkit-scrollbar {
+  width: 3px; /* Largura da barra de rolagem vertical */
+  height: 3px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+::-webkit-scrollbar-thumb {
+  background-color: #999; /* Cor do "polegar" da barra de rolagem (a parte que o usuário arrasta) */
+  border-radius: 6px; /* Raio de borda para o "polegar" */
+}
+
+/* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #789; /* Cor do "polegar" da barra de rolagem ao passar o mouse */
+}
+
+/* Para navegadores baseados em Firefox */
+/* Apenas para personalização básica */
+scrollbar-color: #888 transparent; /* Cor da barra de rolagem vertical */
+
   img {
     width: 100%;
     border-radius: 8px;
-  }
 
-  p {
-    font-size: .6rem;
-    color: var(--gray);
-    line-height: 150%;
+    /* max-width: 100%;
+    height: auto;*/
+    overflow: hidden; 
+    object-fit: cover;
   }
 
   &:hover {
@@ -114,10 +134,11 @@ export const Card = styled.li`
 
   @media (min-width: 768px) {
     width: 100%;
-
-    p {
-      font-size: .7rem;
-    }
+    height: 400px;
+      p {
+        font-size: .7rem;
+      }
+    
   }
 
   @media (min-width: 1229px) {
@@ -129,19 +150,123 @@ export const Card = styled.li`
   }
 `
 
-export const CardGitHub = styled.div`
+export const CardGitHub = styled.li`
   display: flex;
   flex-direction: column;
   gap: .4rem;
   flex-shrink: 0;
 
   padding: 1rem;
-  width: 300px;
-  height: max-content;
+  width: max-content;
 
-  background-color: var(--white);
+  border-radius: 1rem;
+
+  position: relative;
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  background: var(--white);
+
+  cursor: pointer;
+
+  .card.typescript {
+    border-top: 1px solid blue;
+  }
+
+  .card.javascript {
+    border-top: 1px solid yellow;
+  }
+
+  h3 {
+    font-size: .9rem;
+    color: var(--gray);
+  }
+
+  small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+
+    /* max-width: 100%;
+    height: auto;*/
+    overflow: hidden; 
+    object-fit: cover;
+  }
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: max-content;
+
+      p {
+        font-size: .7rem;
+      }
+    
+  }
+
+  @media (min-width: 1229px) {
+    width: 48%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 48%;
+  }
+`
+
+export const TagCategory = styled.div`
+  /* background: #496DDB; */
+  background: rgb(14,107,168);
+  background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
+
+  border-radius: 20px;
+
+  color: var(--white);
+  font-size: .7rem;
+  font-weight: 700;
+
+  width: fit-content;
+  padding: .4rem .7rem;
+
+  position: absolute;
+  top: -10px;
+  right: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+`
+
+export const DescriptionWithOverFlow = styled.article`
+  overflow-y: auto;
+  height: 80px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Ajuste a altura do degradê conforme necessário */
+    background: linear-gradient(transparent, rgba(246, 246, 246, 0.8)); /* Defina as cores do degradê aqui */
+  }
+  
+  p {
+    font-size: .6rem;
+    color: var(--gray);
+    line-height: 150%;
+
+    @media(min-width: 769px) {
+      font-size: .8rem;
+    }
+  }
 `
 
 export const TypeSection = styled.div`

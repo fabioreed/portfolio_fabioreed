@@ -4,6 +4,9 @@ import {
   LinkOfTheProject,
   LinkToTheProject,
   TypeSection,
+  DescriptionWithOverFlow,
+  TagCategory,
+  CardGitHub
 } from './style'
 import { UserContext } from '../../providers/UserContext'
 import { BsArrowUpLeftCircleFill } from 'react-icons/bs'
@@ -14,6 +17,7 @@ interface ProjectType {
   technologies: string[]
   link: string
   description: string
+  category: string
 }
 
 interface RepoType {
@@ -32,20 +36,20 @@ export const Carda = () => {
     <>
       {selectedCategory === 'github' ? (
         repositoriesGitHub.map((repo: RepoType) => (
-          <Card key={repo.id}>
+          <CardGitHub key={repo.id}>
             <h3>{repo.name}</h3>
             <span>{repo.description}</span>
             <TypeSection>
                 <span>{repo.language}</span>
             </TypeSection>
-            <p>{repo.description}</p>
+              {/* <p>{repo.description}</p> */}
             <LinkOfTheProject>
               <BsArrowUpLeftCircleFill />
               <LinkToTheProject to={repo.html_url} target="_blank">
                 <b>Visit repository</b>
               </LinkToTheProject>
             </LinkOfTheProject>
-          </Card>
+          </CardGitHub>
 
         ))) : (
 
@@ -54,6 +58,7 @@ export const Carda = () => {
             key={index}
             className={project.technologies.includes('Typescript') ? 'typescript' : 'javascript'}
           >
+            <TagCategory>{project.category}</TagCategory>
             <h3>{project.name}</h3>
             <img src={project.img} alt={project.name} />
             <TypeSection>
@@ -61,7 +66,9 @@ export const Carda = () => {
                 <span key={index}>{tech}</span>
               ))}
             </TypeSection>
-            <p>{project.description}</p>
+            <DescriptionWithOverFlow>
+              <p>{project.description}</p>
+            </DescriptionWithOverFlow>
             <LinkOfTheProject>
               <BsArrowUpLeftCircleFill />
               <LinkToTheProject to={project.link} target="_blank">
