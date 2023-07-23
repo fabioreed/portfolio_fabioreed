@@ -5,7 +5,7 @@ import godonate from './assets/godonate.jpg'
 import starbucks from './assets/starbucks.png'
 import pepsi from './assets/pepsi.png'
 import netflix from './assets/netflix.png.jpg'
-import api from './assets/api.png'
+// import api from './assets/api.png'
 
 const projects = [
   {

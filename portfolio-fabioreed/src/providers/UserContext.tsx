@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, SetStateAction, Dispatch } from 'react'
+import { createContext, useState, useEffect } from 'react'
 import projects from '../mock'
 import { userData } from '../utils/userData'
 // import { darkTheme } from '../styles/themes/dark'
@@ -20,20 +20,19 @@ interface RepoType {
   homepage: string
 }
 
-interface ThemeType {
-  // title: string;
-  // color: { };
-    primary: string;
-    yellow: string;
-    gray: string;
-    white: string;
-    black: string;
-    whatsapp: string;
-    linkedin: string;
-    gmail: string;
-    background: string;
- 
-}
+// interface ThemeType {
+//   // title: string;
+//   // color: { };
+//     primary: string;
+//     yellow: string;
+//     gray: string;
+//     white: string;
+//     black: string;
+//     whatsapp: string;
+//     linkedin: string;
+//     gmail: string;
+//     background: string;
+// }
 
 interface IFunctions {
   modal: boolean

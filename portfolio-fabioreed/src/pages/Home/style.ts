@@ -19,7 +19,7 @@ export const SectionnContainerHome = styled.section`
     flex-direction: column;
     gap: 1.2rem;
 
-    h1 {
+    /* h1 {
       font-size: 1.5rem;
       color: var(--black);
 
@@ -32,7 +32,7 @@ export const SectionnContainerHome = styled.section`
     p {
       color: var(--gray);
       font-size: 1rem;
-    }
+    } */
   }
 
   @media (min-width: 768px) {
@@ -44,9 +44,9 @@ export const SectionnContainerHome = styled.section`
     padding: 1.7rem 8rem;
 
     div {
-      width: 100%;
+      /* width: 100%; */
 
-      h1 {
+      /* h1 {
         font-size: 2.4rem;
       }
 
@@ -56,7 +56,43 @@ export const SectionnContainerHome = styled.section`
 
       p {
         font-size: 1rem;
-      }
+      } */
+    }
+  }
+`
+
+export const ContainerWhoIamWords = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.5rem;
+    color: var(--black);
+
+    span {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+  }
+  
+  p {
+    color: var(--gray);
+    font-size: 1rem;
+  }
+
+  @media (min-width: 769px) {
+    width: 77%;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    span {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 `

@@ -1,4 +1,4 @@
-import { MainContainerHome, MediaSocial, PDFContainer, PictureHome, ResumeContainer, SectionnContainerHome, SocialMediaContainer, TechnologiesContainer } from './style'
+import { MainContainerHome, MediaSocial, PDFContainer, PictureHome, ResumeContainer, SectionnContainerHome, SocialMediaContainer, TechnologiesContainer, ContainerWhoIamWords } from './style'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
@@ -17,13 +17,9 @@ const Home = (): JSX.Element => {
       <Header />
       <SectionnContainerHome>
         <div>
-          <h1>I'm a <span>&lt; Frontend /&gt; </span>Developer creating elegant and <span>functional</span> interfaces.</h1>
-          <p>I'm a <b>frontend developer</b> passionate about creating elegant and functional interfaces that provide the best user experience.</p>
-          <ResumeContainer>
-            <PDFContainer>
-              <a href={CurriculoEn} download>English CV<BsCloudArrowDownFill /></a>
-              <a href={CurriculoPt} download>Currículo em português<BsCloudArrowDownFill /></a>
-            </PDFContainer>
+          <ContainerWhoIamWords>
+            <h1>I'm a <span>&lt; Frontend /&gt; </span>Developer creating elegant and <span>functional</span> interfaces.</h1>
+            <p>I'm a <b>frontend developer</b> passionate about creating elegant and functional interfaces that provide the best user experience.</p>
             <TechnologiesContainer>
               <div>
                 <FaReact />
@@ -47,6 +43,13 @@ const Home = (): JSX.Element => {
                 <FaNodeJs />
               </div>
             </TechnologiesContainer>
+          </ContainerWhoIamWords>
+          <ResumeContainer>
+            <PDFContainer>
+              <a href={CurriculoEn} download>English CV<BsCloudArrowDownFill /></a>
+              <a href={CurriculoPt} download>Currículo em português<BsCloudArrowDownFill /></a>
+            </PDFContainer>
+            
           </ResumeContainer>
         </div>
         <PictureHome>
