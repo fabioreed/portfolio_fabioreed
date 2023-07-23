@@ -46,6 +46,8 @@ export const List = styled.ul`
   gap: 1rem;
   
   overflow-x: auto;
+
+  z-index: 0;
   
   @media (min-width: 768px) {
     padding: 1rem 8rem;
@@ -97,26 +99,26 @@ export const Card = styled.li`
   }
 
   /* Estilizando a barra de rolagem */
-/* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
-::-webkit-scrollbar {
-  width: 3px; /* Largura da barra de rolagem vertical */
-  height: 3px; /* Altura da barra de rolagem horizontal */
-}
+  /* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+  ::-webkit-scrollbar {
+    width: 3px; /* Largura da barra de rolagem vertical */
+    height: 3px; /* Altura da barra de rolagem horizontal */
+  }
 
-/* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
-::-webkit-scrollbar-thumb {
-  background-color: #999; /* Cor do "polegar" da barra de rolagem (a parte que o usuário arrasta) */
-  border-radius: 6px; /* Raio de borda para o "polegar" */
-}
+  /* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #999; /* Cor do "polegar" da barra de rolagem (a parte que o usuário arrasta) */
+    border-radius: 6px; /* Raio de borda para o "polegar" */
+  }
 
-/* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #789; /* Cor do "polegar" da barra de rolagem ao passar o mouse */
-}
+  /* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #789; /* Cor do "polegar" da barra de rolagem ao passar o mouse */
+  }
 
-/* Para navegadores baseados em Firefox */
-/* Apenas para personalização básica */
-scrollbar-color: #888 transparent; /* Cor da barra de rolagem vertical */
+  /* Para navegadores baseados em Firefox */
+  /* Apenas para personalização básica */
+  scrollbar-color: #888 transparent; /* Cor da barra de rolagem vertical */
 
   img {
     width: 100%;
@@ -135,10 +137,10 @@ scrollbar-color: #888 transparent; /* Cor da barra de rolagem vertical */
   @media (min-width: 768px) {
     width: 100%;
     height: 400px;
-      p {
-        font-size: .7rem;
-      }
     
+    p {
+      font-size: .7rem;
+    }
   }
 
   @media (min-width: 1229px) {
@@ -242,29 +244,34 @@ export const TagCategory = styled.div`
   right: 10px;
 
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  z-index: 1;
 `
 
 export const DescriptionWithOverFlow = styled.article`
-  overflow-y: auto;
-  height: 80px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 55px;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Ajuste a altura do degradê conforme necessário */
-    background: linear-gradient(transparent, rgba(246, 246, 246, 0.8)); /* Defina as cores do degradê aqui */
-  }
-  
   p {
     font-size: .6rem;
     color: var(--gray);
     line-height: 150%;
+  }
 
-    @media(min-width: 769px) {
-      font-size: .8rem;
+@media(min-width: 769px) {
+  font-size: .8rem;
+  overflow-y: auto;
+  height: 80px;
+
+  p {
+    font-size: .8rem;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+      bottom: 55px;
+      left: 0;
+      width: 100%;
+      height: 50px; /* Ajuste a altura do degradê conforme necessário */
+      background: linear-gradient(transparent, rgba(246, 246, 246, 0.8)); /* Defina as cores do degradê aqui */
     }
   }
 `

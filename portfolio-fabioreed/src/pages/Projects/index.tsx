@@ -2,7 +2,7 @@ import Header from '../../components/Header'
 import {
   ContainerProjects,
   List,
-  TitleAndSpan,
+  TitleAndSpan
 } from './style'
 import { CiCoffeeCup } from 'react-icons/ci'
 import FilterProjects from '../../components/FilterProjects'
