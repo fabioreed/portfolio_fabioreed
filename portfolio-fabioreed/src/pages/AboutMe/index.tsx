@@ -29,13 +29,13 @@ I'm passionate about programming and I am recently graduated as a Fullstack Deve
         </article>
         <ContainerOfInfoCards>
           <AsideCard>
-             <FigureContainer>
+            <FigureContainer>
               <img src={Me} />
               <div>
                 <h3>{userData.nameUser}</h3>
                 <span>Frontend Developer React | Typescript | CSS (Mobile First)</span>
               </div>
-            </FigureContainer> 
+            </FigureContainer>
 
             <AnotherInfoCard>
               <LinkCardInfo to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">

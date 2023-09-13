@@ -10,19 +10,24 @@ const GlobalStyle = createGlobalStyle`
     --background: #FFF9E7;
     --white: #F6F6F6;
     --gray: #5F7067;
+    --light-gray: #5d7067;
     --yellow: #F8CD53;
     --green: #6FD660;
     --black: #181818;
     --whatsapp: #25D366;
     --linkedin: #0077B5;
     --gmail: #EA4335;
+    --blue: #101c2e;
   }
 
   body {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(rgba(255, 249, 251, .9), rgba(255, 249, 251, 0.9)), url('https://rare-gallery.com/uploads/posts/4554464-digital-art-minimalism-abstract-pattern-geometry-triangle-square-colorful-lines-mosaic.jpg');
-    background-size: auto;
-    background-repeat: repeat;
+    background: linear-gradient(rgba(16, 28, 46, .9999), rgba(0, 0, 0, 0.8)), url('https://images5.alphacoders.com/523/523521.jpg');
+    /* https://images7.alphacoders.com/888/888980.jpg */
+    /* https://images5.alphacoders.com/523/523521.jpg */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /* background: #101C2E; */
   }
 

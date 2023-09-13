@@ -25,6 +25,7 @@ export const HeaderContainer = styled.header`
     h3 {
       font-size: 1.4rem;
       font-weight: bold;
+      color: var(--gray);
     }
 
     img {
@@ -117,10 +118,14 @@ export const Burger = styled.aside`
 
     background-color: transparent;
 
-    color: var(--black);
+    color: var(--gray);
+
+    &:hover {
+      color: var(--primary-color);
+    }
 
     @media (min-width: 768px) {
-        display: none;
+      display: none;
     }
   }
 

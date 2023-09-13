@@ -4,7 +4,6 @@ import styled from "styled-components"
 export const ContainerAboutMe = styled.main`
   padding: 1rem;
 
-  
   footer {
     display: flex;
     flex-direction: column;
@@ -18,6 +17,15 @@ export const ContainerAboutMe = styled.main`
     flex-direction: column;
     gap: 1rem;
 
+    background: rgba(16, 28, 46, 0.1);
+    backdrop-filter: blur(8px);
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
     h1 {
       color: var(--gray);
     }
@@ -30,14 +38,17 @@ export const ContainerAboutMe = styled.main`
   }
 
   @media (min-width: 768px) {
-    
     footer {
+      flex-direction: row;
       margin-top: 7rem;
       padding: 3rem 7.8rem;
     }
 
     article {
       gap: 2rem;
+
+      width: 70%;
+      padding: 1.4rem;
 
       h1 {
         font-size: 2.7rem;
@@ -55,33 +66,33 @@ export const ContainerAboutMe = styled.main`
 `
 
 export const SayHello = styled(Link)`
-    display: flex;
-    gap: .3rem;
-    align-items: center;
+  display: flex;
+  gap: .3rem;
+  align-items: center;
 
-    color: var(--white);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    
-    width: fit-content;
-    padding: .9rem .7rem;
-    
-    border-radius: 8px 2px;
-    
-    color: var(--white);
-    
-    background-color: var(--primary-color);
-    
-    transition: .26s ease;
-    box-shadow: .6px .7px 1px var(--yellow);
-    cursor: pointer;
-    
-    &:hover {
-      background-color: var(--yellow);
-      color: var(--black);
-      box-shadow: .6px .7px 1px var(--primary-color);
-    }
+  color: var(--white);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  
+  width: fit-content;
+  padding: .7rem 1rem;
+  
+  border-radius: 6px;
+  
+  color: var(--white);
+  
+  background-color: var(--primary-color);
+  
+  transition: .26s ease;
+  box-shadow: .6px .7px 1px var(--yellow);
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+    box-shadow: .6px .7px 1px var(--primary-color);
+  }
 `
 
 export const AsideCard = styled.aside`
@@ -91,19 +102,21 @@ export const AsideCard = styled.aside`
 
   background-color: var(--white);
   
-  padding: 2rem;
+  padding: 1rem;
 
-  border-radius: 16px;
-  /* border-bottom: 8px solid white; */
+  border-radius: 1rem;
   
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  background: var(--black);
+  background: var(--blue);
+
+  background: rgba(16, 28, 46, 0.1);
+  backdrop-filter: blur(8px);
   
   @media (min-width: 960px) {
     gap: 1.8rem;
-    /* width: 48%; */
-    height: 400px;
+
+    padding: 1.4rem;
   }
 `
 
@@ -223,63 +236,69 @@ export const Icons = styled.div`
 
 export const AnotherInfoCard = styled.ul`
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
 
   background-color: inherit;
-  
-  padding: 1rem;
-
-  /* border-radius: 16px; */
   
   font-size: 1.1rem;
 
   width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `
 
 export const LinkCardInfo = styled(Link)`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-size: .8rem;
+  
+  padding: .4rem;
+  width: 100%;
+
+  color: var(--white);
+
+  border-radius: 2.2rem;
+  
+  border: 1px solid var(--white);
+  cursor: pointer;
+  transition: .4s ease;
+  
+  > span {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  @media (min-width: 768px) {
     display: flex;
     align-items: center;
-    gap: 2rem;
-
-    font-family: 'Roboto';
+    
+    font-size: 1.4rem;
 
     padding: .7rem;
 
-    color: var(--white);
-
-    border-radius: 6px;
-    
-    border: 1px solid var(--white);
-    cursor: pointer;
-    transition: .4s ease;
-
-    @media (min-width: 769px) {
-      &:hover:nth-child(1) {
-        color: var(--whatsapp);
-        border: 1.4px solid var(--whatsapp);
-      }
-
-      &:hover:nth-child(2) {
-        color: var(--linkedin);
-        border: 1.4px solid var(--linkedin);
-      }
-
-      &:hover:nth-child(3) {
-        color: var(--gmail);
-        border: 1.4px solid var(--gmail);
-      }
+    > span {
+      font-size: .7rem;
     }
 
-    @media (min-width: 769) {
-      padding: 2rem;
+    &:hover:nth-child(1) {
+      background: var(--whatsapp);
+      border: 1px solid var(--whatsapp);
     }
-  
-  @media (min-width: 960px) {
-    gap: 1.8rem;
-    width: 100%;
+
+    &:hover:nth-child(2) {
+      background: var(--linkedin);
+      border: 1px solid var(--linkedin);
+    }
+
+    &:hover:nth-child(3) {
+      background: var(--gmail);
+      border: 1px solid var(--gmail);
+    }
   }
 `
 

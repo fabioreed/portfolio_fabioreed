@@ -36,6 +36,10 @@ export const SectionnContainerHome = styled.section`
     flex-direction: column;
     gap: 1.2rem;
 
+    > h1 {
+      color: var(--gray);
+    }
+
     /* h1 {
       font-size: 1.5rem;
       color: var(--black);

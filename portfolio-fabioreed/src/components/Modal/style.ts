@@ -24,12 +24,16 @@ export const ModalItSelf = styled.section`
   border-radius: 4px;
 
   position: absolute;
-  top: 0px;
+  top: 22.5px;
   right: 7px;
 
   z-index: 7;
 
   animation: slideIn 0.5s forwards;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px); /* Ajuste o valor conforme desejado */
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
 
   @keyframes slideIn {
     from {
