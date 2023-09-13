@@ -27,7 +27,7 @@ const Projects = () => {
       </TitleAndSpan>
       <FilterProjects />
       <List>
-        <Carda className="fade-in" />
+        <Carda />
       </List>
     </ContainerProjects>
   )

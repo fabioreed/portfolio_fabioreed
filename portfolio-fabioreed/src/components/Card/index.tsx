@@ -36,7 +36,7 @@ export const Carda = () => {
     <>
       {selectedCategory === 'github' ? (
         repositoriesGitHub.map((repo: RepoType) => (
-          <CardGitHub key={repo.id}>
+          <CardGitHub key={repo.id} className="fade-in">
             <h3>{repo.name}</h3>
             <span>{repo.description}</span>
             <TypeSection>
@@ -56,7 +56,7 @@ export const Carda = () => {
         filteredProjects.map((project: ProjectType, index: number) => (
           <Card
             key={index}
-            className={project.technologies.includes('Typescript') ? 'typescript' : 'javascript'}
+            className={project.technologies.includes('Typescript') ? 'typescript fade-in' : 'javascript fade-in'}
           >
             <TagCategory>{project.category}</TagCategory>
             <h3>{project.name}</h3>
