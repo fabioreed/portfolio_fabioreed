@@ -5,15 +5,21 @@ import Modal from '../Modal'
 import { UserContext } from '../../providers/UserContext'
 import ContactModal from '../ContactModal'
 import { userData } from '../../utils/userData'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
   const { modal, setModal, contact, setContact } = useContext(UserContext)
+  const navigate = useNavigate()
+
+  const handleBackToHome = () => {
+    navigate('/')
+  }
 
   return (
     <HeaderFixed>
       <HeaderContainer>
         <div>
-          <h3>
+          <h3 onClick={handleBackToHome}>
             Fabio<span>.dev</span>
           </h3>
           <img src={`https://github.com/${userData.githubUser}.png`} />

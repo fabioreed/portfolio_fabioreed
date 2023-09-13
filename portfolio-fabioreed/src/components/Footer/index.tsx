@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { ArrowUp, BackgroundFooter, FooterContainer, SocialMedia } from './style'
+import { ArrowUp, BackgroundFooter, FooterContainer, LinkToSocialMedia, SocialMedia } from './style'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { BsArrowUpCircleFill } from 'react-icons/bs'
 
@@ -29,8 +29,12 @@ const Footer = () => {
     <BackgroundFooter>
       <FooterContainer>
         <SocialMedia>
-          <FaLinkedin />
-          <FaGithub />
+          <LinkToSocialMedia to='https://www.linkedin.com/in/fabioreed' target='_blank'>
+            <FaLinkedin />
+          </LinkToSocialMedia>
+          <LinkToSocialMedia to='https://www.github.com/fabioreed' target='_blank'>
+            <FaGithub />
+          </LinkToSocialMedia>
         </SocialMedia>
         <span>© Fábio Luiz 2023</span>
         <ArrowUp onClick={scrollToTop}><BsArrowUpCircleFill /></ArrowUp>

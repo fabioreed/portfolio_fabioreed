@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const BackgroundFooter = styled.div`
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 100%);
+  background: rgba(16, 28, 46, .7);
   backdrop-filter: blur(10px); /* Ajuste o valor conforme desejado */
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
+  box-shadow: rgba(16, 28, 46, 1) 0px 4px 12px;
 `
 
 export const FooterContainer = styled.footer`
@@ -14,7 +14,6 @@ export const FooterContainer = styled.footer`
 
   padding: 3rem;
 
-  /* background: var(--black); */
 
   > span {
     color: var(--gray);
@@ -27,13 +26,23 @@ export const FooterContainer = styled.footer`
 
 export const SocialMedia = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 1rem; 
+`
 
+export const LinkToSocialMedia = styled(Link)`
   font-size: 1.7rem;
 
-  color: var(--gray);
+  :nth-child(1), :nth-child(2) {
+    cursor: pointer;
+    
+    color: var(--gray);
 
-  cursor: pointer;
+    transition: .2s ease;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
 `
 
 export const ArrowUp = styled.button`
@@ -42,4 +51,10 @@ export const ArrowUp = styled.button`
   color: var(--gray);
 
   font-size: 1.7rem;
+
+  transition: .2s ease;
+
+  &:hover {
+    color: var(--white);
+  }
 `
