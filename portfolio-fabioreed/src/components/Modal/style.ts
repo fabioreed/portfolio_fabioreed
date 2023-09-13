@@ -7,8 +7,8 @@ export const ModalContainer = styled.div`
   left: 0;
   z-index: 3;
 
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.5);
 
@@ -18,69 +18,63 @@ export const ModalContainer = styled.div`
 `
 
 export const ModalItSelf = styled.section`
-    background-color: white;
-    width: 96%;
-    max-width: 600px;
-    height: 40%;
-    padding: 20px;
-    border-radius: 6px;
+  background-color: var(--white);
+  width: 180px;
+  padding: 1rem;
+  border-radius: 4px;
 
-    position: absolute;
-    bottom: 0;
-    right: 7px;
+  position: absolute;
+  top: 0px;
+  right: 7px;
 
-    z-index: 0;
+  z-index: 7;
 
-    animation: slideIn 0.5s forwards;
+  animation: slideIn 0.5s forwards;
 
-    @keyframes slideIn {
-      from {
-        transform: translateY(100%);
-      }
-      to {
-        transform: translateY(0);
-      }
+  @keyframes slideIn {
+    from {
+      transform: translateY(0);
     }
-
-    div {
-      display: flex;
-      justify-content: flex-end;
-
-      span {
-        cursor: pointer;
-
-        font-size: 1.7rem;
-      }
+    to {
+      transform: translateY(30%);
     }
+  }
 
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+  div {
+    display: flex;
+    justify-content: flex-end;
 
-      li {
-        
-      }
+    span {
+      cursor: pointer;
+
+      font-size: 1rem;
+
+      color: var(--gray);
     }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 
 export const TagLink = styled(Link)`
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 
-    color: var(--primary-color);
-    font-weight: 600;
+  color: var(--gray);
+  font-weight: 600;
 
-    font-size: 1.1rem;
+  font-size: .8rem;
 
-    border-bottom: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--primary-color);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    font-family: 'Shadows Into Light', cursive;
-
-    &:hover {
-      color: var(--gray);
-    }
+  &:hover {
+    color: var(--gray);
+  }
 `

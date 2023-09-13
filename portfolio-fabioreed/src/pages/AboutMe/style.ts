@@ -4,12 +4,13 @@ import styled from "styled-components"
 export const ContainerAboutMe = styled.main`
   padding: 1rem;
 
+  
   footer {
     display: flex;
     flex-direction: column;
     gap: 1.7rem;
 
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 
   article {
@@ -26,12 +27,12 @@ export const ContainerAboutMe = styled.main`
       line-height: 150%;
       font-size: .9rem;
     }
-
-    
   }
 
   @media (min-width: 768px) {
+    
     footer {
+      margin-top: 7rem;
       padding: 3rem 7.8rem;
     }
 

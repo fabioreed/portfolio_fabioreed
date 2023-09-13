@@ -8,8 +8,12 @@ export const MainContainerHome = styled.main`
   flex-direction: column;
   gap: 2rem;
 
+  margin-top: 3.7rem;
+
   @media (min-width: 768px) {
     gap: 0;
+
+    margin-top: 9rem;
   }
 `
 

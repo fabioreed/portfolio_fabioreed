@@ -185,6 +185,8 @@ export const CardGitHub = styled.li`
 
   cursor: pointer;
 
+  animation: ${fadeIn} 0.5s ease-in-out;
+
   .card.typescript {
     border-top: 1px solid blue;
   }

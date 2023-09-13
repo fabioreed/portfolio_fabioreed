@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     background: linear-gradient(rgba(255, 249, 251, .9), rgba(255, 249, 251, 0.9)), url('https://rare-gallery.com/uploads/posts/4554464-digital-art-minimalism-abstract-pattern-geometry-triangle-square-colorful-lines-mosaic.jpg');
     background-size: auto;
     background-repeat: repeat;
+    /* background: #101C2E; */
   }
 
   button {

@@ -31,9 +31,9 @@ const Modal = () => {
           <span onClick={() => setModal(!modal)}>X</span>
         </div>
         <ul>
-          <TagLink to='/' onClick={handleCloseModal}>Home <HiOutlineHome /></TagLink>
-          <TagLink to='/projects' onClick={handleCloseModal}>Projects<AiOutlineFundProjectionScreen /></TagLink>
-          <TagLink to='/about' onClick={handleCloseModal}>About Me<FaMapSigns /></TagLink>
+          <TagLink to='/' onClick={handleCloseModal}><HiOutlineHome />Home</TagLink>
+          <TagLink to='/projects' onClick={handleCloseModal}><AiOutlineFundProjectionScreen />Projects</TagLink>
+          <TagLink to='/about' onClick={handleCloseModal}><FaMapSigns />About Me</TagLink>
         </ul>
       </ModalItSelf>
     </ModalContainer>

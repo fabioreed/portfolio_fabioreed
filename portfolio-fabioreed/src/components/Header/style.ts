@@ -8,9 +8,9 @@ export const HeaderFixed = styled.div`
   left: 0;
   z-index: 9;
   padding: 0.7rem;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.01);
   backdrop-filter: blur(10px); /* Ajuste o valor conforme desejado */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
 `
 
 export const HeaderContainer = styled.header`
@@ -99,9 +99,9 @@ export const LinkTag = styled(Link)`
   transition: .2s ease;
 
   &:hover {
-    font-weight: 600;
-    font-size: .93rem;
-    color: var(--yellow);
+    font-weight: 700;
+    font-size: .91rem;
+    color: var(--primary-color);
 
     transform: scaleX(-10px, -20px);
   }

@@ -7,6 +7,12 @@ export const ContainerProjects = styled.main`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  margin-top: 3.7rem;
+
+  @media (min-width: 768px) {
+    margin-top: 11rem;
+  }
 `
 
 export const TitleAndSpan = styled.div`
@@ -44,6 +50,8 @@ export const TitleAndSpan = styled.div`
 export const List = styled.ul`
   display: flex;
   gap: 1rem;
+
+  padding: 1rem 0;
   
   overflow-x: auto;
   
@@ -56,6 +64,7 @@ export const List = styled.ul`
     justify-content: space-between;
   }
 `
+
 export const Card = styled.li`
   display: flex;
   flex-direction: column;
