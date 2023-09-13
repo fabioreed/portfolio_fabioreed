@@ -93,13 +93,16 @@ export const AsideCard = styled.aside`
   padding: 2rem;
 
   border-radius: 16px;
-  border-bottom: 8px solid white;
+  /* border-bottom: 8px solid white; */
   
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  background: var(--black);
   
   @media (min-width: 960px) {
     gap: 1.8rem;
-    width: 48%;
+    /* width: 48%; */
+    height: 400px;
   }
 `
 
@@ -113,8 +116,6 @@ export const FigureContainer = styled.figure`
     height: 60px;
 
     border-radius: 50%;
-
-    border: 2px solid var(--primary-color);
 
     transition: .4s ease;
 
@@ -131,28 +132,27 @@ export const FigureContainer = styled.figure`
 
     h3 {
       font-size: .9rem;
-      color: var(--black);
+      color: var(--white);
     }
 
     span {
       font-size: .6rem;
-
-      color: var(--gray);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: var(--white);
     }
   }
 
   @media (min-width: 768px) {
-    
     div > h3 {
       font-size: 1.1rem;
     }
 
     div > span {
-      font-size: .85rem;
+      font-size: .7rem;
     }
 
     img {
-      border: 2.1px solid var(--primary-color);
+      border: 2px solid var(--white);
     }
   }
 `
@@ -161,6 +161,12 @@ export const MyTechnologies = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  background: var(--black);
+
+  padding: 2rem;
+
+  border-radius: 16px;
 
   div:nth-child(1) {
     border-bottom: 1px solid var(--gray);
@@ -216,19 +222,17 @@ export const Icons = styled.div`
 
 export const AnotherInfoCard = styled.ul`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 
-  background-color: var(--white);
+  background-color: inherit;
   
   padding: 1rem;
 
-  border-radius: 16px;
-  border-bottom: 8px solid white;
+  /* border-radius: 16px; */
   
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
   font-size: 1.1rem;
 
   width: 100%;
@@ -239,15 +243,15 @@ export const LinkCardInfo = styled(Link)`
     align-items: center;
     gap: 2rem;
 
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto';
 
     padding: .7rem;
 
-    color: var(--gray);
+    color: var(--white);
 
-    border-radius: 12px;
+    border-radius: 6px;
     
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--white);
     cursor: pointer;
     transition: .4s ease;
 
@@ -276,4 +280,9 @@ export const LinkCardInfo = styled(Link)`
     gap: 1.8rem;
     width: 100%;
   }
+`
+
+export const ThirdCard = styled.div`
+  display: flex;
+  flex-direction: column;
 `

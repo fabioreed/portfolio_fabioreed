@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Header from '../../components/Header'
 import {
   ContainerProjects,
@@ -9,6 +10,10 @@ import FilterProjects from '../../components/FilterProjects'
 import { Carda } from '../../components/Card'
 
 const Projects = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <ContainerProjects>
@@ -22,7 +27,7 @@ const Projects = () => {
       </TitleAndSpan>
       <FilterProjects />
       <List>
-        <Carda />
+        <Carda className="fade-in" />
       </List>
     </ContainerProjects>
   )

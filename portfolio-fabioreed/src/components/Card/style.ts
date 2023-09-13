@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 export const ContainerProjects = styled.main`
   padding: 1rem;
@@ -58,6 +58,18 @@ export const List = styled.ul`
     justify-content: space-between;
   }
 `
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
 export const Card = styled.li`
   display: flex;
   flex-direction: column;
@@ -76,6 +88,8 @@ export const Card = styled.li`
   background-color: var(--white);
 
   cursor: pointer;
+
+  animation: ${fadeIn} 0.5s ease-in-out;
 
   .card.typescript {
     border-top: 1px solid blue;
@@ -210,10 +224,9 @@ export const CardGitHub = styled.li`
     width: 100%;
     height: max-content;
 
-      p {
-        font-size: .7rem;
-      }
-    
+    p {
+      font-size: .7rem;
+    }
   }
 
   @media (min-width: 1229px) {

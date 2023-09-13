@@ -1,4 +1,5 @@
-import { MainContainerHome, MediaSocial, PDFContainer, PictureHome, ResumeContainer, SectionnContainerHome, SocialMediaContainer, TechnologiesContainer, ContainerWhoIamWords } from './style'
+import { useEffect } from 'react'
+import { MainContainerHome, MediaSocial, PDFContainer, PictureHome, ResumeContainer, SectionnContainerHome, SocialMediaContainer, TechnologiesContainer, ContainerWhoIamWords, FooterRecentProjects, DivContainerRecentProjects, AsideContainerFooter, RecentProjectsContainer, RecentProjectsCard, SeeMore } from './style'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
@@ -11,6 +12,10 @@ import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
 import CurriculoPt from '../../assets/Fabio Luiz - Curriculo.docx.pdf'
 
 const Home = (): JSX.Element => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <MainContainerHome>
@@ -61,6 +66,37 @@ const Home = (): JSX.Element => {
         </PictureHome>
       </SectionnContainerHome>
 
+      <FooterRecentProjects>
+        <DivContainerRecentProjects>
+          <h3>My <span>recent projects</span></h3>
+        </DivContainerRecentProjects>
+        <AsideContainerFooter>
+          <RecentProjectsContainer>
+            <RecentProjectsCard>
+                <img src='https://c0.wallpaperflare.com/preview/605/638/343/app-application-cellphone-cellular.jpg' />
+                <div>
+                  <h4>Algum Titulo Aqui</h4>
+                  <p>Something short to write</p>
+                </div>
+              </RecentProjectsCard>
+              <RecentProjectsCard>
+                <img src='https://c0.wallpaperflare.com/preview/605/638/343/app-application-cellphone-cellular.jpg' />
+                <div>
+                  <h4>Algum Titulo Aqui</h4>
+                  <p>Something short to write</p>
+                </div>
+              </RecentProjectsCard>
+              <RecentProjectsCard>
+                <img src='https://c0.wallpaperflare.com/preview/605/638/343/app-application-cellphone-cellular.jpg' />
+                <div>
+                  <h4>Algum Titulo Aqui</h4>
+                  <p>Something short to write</p>
+                </div>
+              </RecentProjectsCard>
+            </RecentProjectsContainer>
+            <SeeMore to='/projects'>See More</SeeMore>
+        </AsideContainerFooter>
+      </FooterRecentProjects>
     </MainContainerHome>
   )
 }

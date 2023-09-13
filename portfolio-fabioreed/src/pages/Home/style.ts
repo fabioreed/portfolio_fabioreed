@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 export const MainContainerHome = styled.main`
   padding: 1rem;
@@ -13,7 +13,20 @@ export const MainContainerHome = styled.main`
   }
 `
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
 export const SectionnContainerHome = styled.section`
+  animation: ${fadeIn} 0.5s ease-in-out;
+
   div {
     display: flex;
     flex-direction: column;
@@ -232,5 +245,130 @@ export const MediaSocial = styled(Link)`
 
   &:hover {
     color: var(--primary-color);
+  }
+`
+
+export const FooterRecentProjects = styled.footer`
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: 768px) {
+  }
+`
+
+export const DivContainerRecentProjects = styled.div`
+  > h3 {
+    color: var(--gray);
+    font-size: .9rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    > h3 {
+      font-size: 1.2rem;
+    }
+
+    flex-direction: row;
+    padding: 1.7rem 8rem;
+
+    margin-bottom: 0;
+  }
+`
+
+export const AsideContainerFooter = styled.aside`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media(min-width: 768px) {
+    padding: 0 8rem;
+
+    gap: 1.7rem;
+  }
+`
+
+export const RecentProjectsContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: 458px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`
+
+export const RecentProjectsCard = styled.li`
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  border-radius: 6px;
+  width: 100%;
+
+  background: var(--white);
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  opacity: .7;
+
+  transition: .2s ease;
+
+  img {
+    overflow: hidden; 
+    object-fit: cover;
+    max-width: 100%;
+
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    padding: .7rem;
+    /* align-items: center; */
+
+    > h4, p {
+      font-size: .7rem;
+      color: var(--gray);
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (min-width: 468px) {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 320px;
+  }
+`
+
+export const SeeMore = styled(Link)`
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.9rem 0.7rem;
+  width: max-content;
+  background-color: var(--black);
+  border-radius: 8px 2px;
+  font-family: 'Quicksand',sans-serif;
+  font-weight: 600;
+  color: var(--white);
+  transition: .2s ease;
+
+  &:hover {
+    color: var(--black);
+
+    background: var(--yellow);
   }
 `
