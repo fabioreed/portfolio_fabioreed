@@ -5,6 +5,9 @@ import godonate from './assets/godonate.jpg'
 import starbucks from './assets/starbucks.png'
 import pepsi from './assets/pepsi.png'
 import netflix from './assets/netflix.png.jpg'
+import contact from './assets/Contact.png'
+import amaro from './assets/Amaro.png'
+import motors from './assets/MotorsShop.png'
 // import api from './assets/api.png'
 
 const projects = [
@@ -151,6 +154,37 @@ const projects = [
     'technologies': ['Python', 'ORM', 'Django', 'Rest Framework'],
     'link': 'https://github.com/fabioreed/bandkamp_api',
     'github': 'https://github.com/fabioreed/bandkamp_api'
+  }
+]
+
+export const recent = [
+  {
+    'name': 'Contact Manager',
+    'img': contact,
+    'category': 'fullstack',
+    'description': 'Contact Management application is a powerful tool developed to simplify and speed up the handling of user information and their respective contacts. It is designed to offer a simple and secure interface, allowing users to easily interact with their data and contact list.',
+    'technologies': ['React', 'Typescript', 'Node.js', 'Express', 'TypeORM'],
+    'link': 'https://github.com/fabioreed/Client-Contacts-Manager',
+    'github': 'https://github.com/fabioreed/Client-Contacts-Manager'
+  },
+  {
+    'name': 'Technical test - Amaro',
+    'img': amaro,
+    'category': 'frontend',
+    'description': "In this project, my role involved developing a responsive catalog page for AMARO products. I emphasized the importance of responsiveness, ensuring the page's seamless usability on various devices. Additionally, I meticulously designed the product display, highlighting crucial information such as product images, names, prices, promotional status, discounted prices (if applicable), available sizes, and eye-catching sale badges for discounted items.",
+    'technologies': ['React', 'Typescript'],
+    'link': 'https://amaro-front.vercel.app',
+    'github': 'https://github.com/fabioreed/front-end-challenge-amaro'
+  },
+  {
+    'name': 'Motors Shop (Group Project - Fullstack)',
+    'img': motors,
+    'category': 'fullstack',
+    'description': "Motors Shop is a responsive platform for buying and selling used vehicles. Users can register as either sellers or buyers, and the platform seamlessly integrates backend and frontend functionalities. It enables users to perform actions such as user registration and profile editing, creating and managing vehicle listings, posting and managing comments on listings, and contacting sellers directly through the platform. Buyers can utilize various filters to find vehicles that match their preferences, and each vehicle listing has a dedicated page with detailed information and the option to leave comments. Listings marked with a green tag indicate favorable pricing, at least 5% below the Fipe table value, making them potential bargains. Sellers can deactivate listings when a vehicle is sold. Additionally, the platform offers a password recovery feature via email for users who forget their passwords, allowing them to reset their passwords conveniently.",
+    'technologies': ['React', 'Typescript', 'Nest', 'Prisma'],
+    'link': 'https://frontend-one-opal.vercel.app',
+    'github': 'https://github.com/KenzieCars/ShopCars',
+    'figma': 'https://www.figma.com/file/KX3C3fIi8zmCRpNipxIYYF/M6---E-Commerce-Filter?type=design&node-id=45-2&mode=design'
   }
 ]
 

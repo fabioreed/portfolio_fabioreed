@@ -4,7 +4,9 @@ const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
   :root {
-    --primary-color: #7E76D5;
+    --primary-color: #F75D37;
+    /* --primary-color: #7E76D5; */
+    --secondary-color: #642AF7;
     --background: #FFF9E7;
     --white: #F6F6F6;
     --gray: #5F7067;
@@ -25,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    border-radius: 8px 2px;
+    border-radius: 8px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
   }

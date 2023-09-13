@@ -322,6 +322,31 @@ export const RecentProjectsCard = styled.li`
 
   transition: .2s ease;
 
+  position: relative;
+
+  > span {
+    background: rgb(14,107,168);
+    background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
+
+    border-radius: 20px;
+
+    color: var(--white);
+    font-size: .7rem;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+
+    width: fit-content;
+    padding: .4rem .7rem;
+
+    position: absolute;
+    top: -10px;
+    right: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    z-index: 1;
+  }
+
   img {
     overflow: hidden; 
     object-fit: cover;
@@ -340,6 +365,42 @@ export const RecentProjectsCard = styled.li`
     > h4, p {
       font-size: .7rem;
       color: var(--gray);
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px; /* Largura da barra de rolagem vertical */
+      height: 3px; /* Altura da barra de rolagem horizontal */
+    }
+
+    /* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+    ::-webkit-scrollbar-thumb {
+      background-color: #999; /* Cor do "polegar" da barra de rolagem (a parte que o usuário arrasta) */
+      border-radius: 6px; /* Raio de borda para o "polegar" */
+    }
+
+    /* Para navegadores baseados em Chromium (Google Chrome, Microsoft Edge, etc.) */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #789; /* Cor do "polegar" da barra de rolagem ao passar o mouse */
+    }
+
+    /* Para navegadores baseados em Firefox */
+    /* Apenas para personalização básica */
+    scrollbar-color: #888 transparent;
+
+    > p {
+    &:before {
+      content: '';
+      position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: 30px; /* Ajuste a altura do degradê conforme necessário */
+        background: linear-gradient(transparent, rgba(246, 246, 246, 0.8)); /* Defina as cores do degradê aqui */
+      }
+
+      overflow-y: auto;
+
+      height: 100px;
     }
   }
 

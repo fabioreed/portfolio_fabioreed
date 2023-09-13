@@ -11,8 +11,13 @@ import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Fabio Resume En Frontend.pdf'
 import CurriculoPt from '../../assets/Fabio Luiz - Curriculo.docx.pdf'
 import Footer from '../../components/Footer'
+import { recent } from '../../mock'
+import { Link } from 'react-router-dom'
 
 const Home = (): JSX.Element => {
+
+  console.log(recent)
+
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -74,27 +79,18 @@ const Home = (): JSX.Element => {
           </DivContainerRecentProjects>
           <AsideContainerFooter>
             <RecentProjectsContainer>
-              <RecentProjectsCard>
-                  <img src='https://c0.wallpaperflare.com/preview/605/638/343/app-application-cellphone-cellular.jpg' />
-                  <div>
-                    <h4>Algum Titulo Aqui</h4>
-                    <p>Something short to write</p>
-                  </div>
-                </RecentProjectsCard>
-                <RecentProjectsCard>
-                  <img src='https://c0.wallpaperflare.com/preview/605/638/343/app-application-cellphone-cellular.jpg' />
-                  <div>
-                    <h4>Algum Titulo Aqui</h4>
-                    <p>Something short to write</p>
-                  </div>
-                </RecentProjectsCard>
-                <RecentProjectsCard>
-                  <img src='https://c0.wallpaperflare.com/preview/605/638/343/app-application-cellphone-cellular.jpg' />
-                  <div>
-                    <h4>Algum Titulo Aqui</h4>
-                    <p>Something short to write</p>
-                  </div>
-                </RecentProjectsCard>
+              {recent.map((item, index) => (
+                <Link to={item.link} target='_blank'>
+                  <RecentProjectsCard key={index}>
+                    <span>{item.category}</span>
+                    <img src={item.img} />
+                    <div>
+                      <h4>{item.name}</h4>
+                      <p>{item.description}</p>
+                    </div>
+                  </RecentProjectsCard>
+                </Link>
+              ))}
               </RecentProjectsContainer>
               <SeeMore to='/projects'>See More</SeeMore>
           </AsideContainerFooter>

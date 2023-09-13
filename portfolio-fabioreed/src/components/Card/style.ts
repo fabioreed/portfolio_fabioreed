@@ -282,7 +282,7 @@ export const DescriptionWithOverFlow = styled.article`
   &:before {
     content: '';
     position: absolute;
-      bottom: 55px;
+      bottom: 45px;
       left: 0;
       width: 100%;
       height: 50px; /* Ajuste a altura do degradê conforme necessário */
@@ -301,7 +301,8 @@ export const TypeSection = styled.div`
     padding: .1rem .2rem;
 
     font-size: .5rem;
-    color: var(--black);
+    color: var(--gray);
+    font-family: 'Quicksand', sans-serif;
 
     background-color: var(--yellow);
 
@@ -325,7 +326,7 @@ export const LinkOfTheProject = styled.div`
   cursor: pointer;
 
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: .8rem;
 
   background-color: var(--primary-color);
   width: max-content;
@@ -340,14 +341,14 @@ export const LinkOfTheProject = styled.div`
   }
 
   @media (min-width: 768px) {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 `
 
 export const LinkToTheProject = styled(Link)`
-    font-size: .7rem;
-    color: var(--white);
-    line-height: 150%;
+  font-size: .7rem;
+  color: var(--white);
+  line-height: 150%;
 `
 
 export const ModalProject = styled.section`

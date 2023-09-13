@@ -1,11 +1,6 @@
 import { createContext, useState, useEffect } from 'react'
 import projects from '../mock'
 import { userData } from '../utils/userData'
-// import { darkTheme } from '../styles/themes/dark'
-// import { lightTheme } from '../styles/themes/light'
-// import lightTheme from '../styles/themes/light'
-// import darkTheme from '../styles/themes/dark'
-// import { DefaultTheme } from 'styled-components/dist/types'
 
 interface IDefaultProviderProps {
   children: React.ReactNode
@@ -19,20 +14,6 @@ interface RepoType {
   html_url: string
   homepage: string
 }
-
-// interface ThemeType {
-//   // title: string;
-//   // color: { };
-//     primary: string;
-//     yellow: string;
-//     gray: string;
-//     white: string;
-//     black: string;
-//     whatsapp: string;
-//     linkedin: string;
-//     gmail: string;
-//     background: string;
-// }
 
 interface IFunctions {
   modal: boolean
@@ -50,9 +31,6 @@ interface IFunctions {
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>
   repositoriesGitHub: RepoType[]
   setRepositoriesGitHub: React.Dispatch<React.SetStateAction<RepoType[]>>
-  // theme: ThemeType
-  // setTheme: Dispatch<SetStateAction<ThemeType>>
-  // toggleTheme: () => void
 }
 
 export const UserContext = createContext({} as IFunctions)
@@ -65,7 +43,6 @@ export const UserProvider = ({ children }: IDefaultProviderProps) => {
   const [selectedCard, setSelectedCard] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [repositoriesGitHub, setRepositoriesGitHub] = useState<RepoType[]>([])
-  // const [theme, setTheme] = useState('light')
 
   const filteredProjects = category === 'all' ? projects : projects.filter(project => project.category === category)
 
