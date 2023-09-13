@@ -134,61 +134,61 @@ export const ResumeContainer = styled.aside`
 `
 
 export const PDFContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a:nth-child(1) {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: .4rem;
 
-    a:nth-child(1) {
-      display: flex;
-      align-items: center;
-      gap: .4rem;
-  
-      padding: .9rem .7rem;
-      width: max-content;
-  
-      background-color: var(--primary-color);
-  
-      border-radius: 8px 2px;
-      font-family: 'Quicksand', sans-serif;
-      font-weight: 600;
-  
-      color: var(--white);
-  
-      transition: .2s ease;
-      box-shadow: .6px .7px 1px var(--yellow);
-  
-      &:hover {
-        background-color: var(--yellow);
-        color: var(--black);
-        box-shadow: .6px .7px 1px var(--primary-color);
-      }
+    padding: .9rem 2rem;
+    width: max-content;
+
+    background-color: var(--primary-color);
+
+    border-radius: 6px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+
+    color: var(--white);
+
+    transition: .2s ease;
+    box-shadow: .6px .7px 1px var(--yellow);
+
+    &:hover {
+      background-color: var(--yellow);
+      color: var(--black);
+      box-shadow: .6px .7px 1px var(--primary-color);
     }
+  }
 
-    a:nth-child(2) {
-      display: flex;
-      align-items: center;
-      gap: .4rem;
+  a:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
 
-      border-bottom: 1.2px solid var(--gray);
+    border-bottom: 1.2px solid var(--gray);
 
-      width: max-content;
+    width: max-content;
 
-      color: var(--gray);
-      font-weight: 600;
-      font-size: .8rem;
+    color: var(--gray);
+    font-weight: 600;
+    font-size: .8rem;
 
-      transition: .2s ease;
+    transition: .2s ease;
 
-      &:hover {
-        color: var(--yellow);
-        border-bottom: 1.2px solid var(--yellow);
-      }
+    &:hover {
+      color: var(--yellow);
+      border-bottom: 1.2px solid var(--yellow);
     }
+  }
 
-    @media (min-width: 768px) {
-      align-items: flex-start;
-    }
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
 `
 
 export const PictureHome = styled.section`
