@@ -23,7 +23,7 @@ const Header = () => {
           <li><LinkTag to='/projects'>Projects</LinkTag></li>
           <li><LinkTag to='/about'>About Me</LinkTag></li>
         </ul>
-        <button className='buttonContact' onClick={() => setContact(!contact)}>Contact</button>
+        <button className='buttonContact' onClick={() => setContact(!contact)}>Contact Me</button>
         <Burger>
           <button className='buttonBurger' onClick={() => setModal(!modal)}>
             <FiMenu />

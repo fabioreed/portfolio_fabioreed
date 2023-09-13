@@ -83,8 +83,6 @@ export const Card = styled.li`
 
   position: relative;
 
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-
   background: rgba(12, 28, 46, 0.7);
   backdrop-filter: blur(10px);
 
@@ -141,7 +139,7 @@ export const Card = styled.li`
     width: 100%;
     border-radius: 8px;
 
-    opacity: .6;
+    opacity: .9;
 
     /* max-width: 100%;
     height: auto;*/

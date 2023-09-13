@@ -92,7 +92,7 @@ const Home = (): JSX.Element => {
                 </Link>
               ))}
               </RecentProjectsContainer>
-              <SeeMore to='/projects'>See More</SeeMore>
+              <SeeMore to='/projects'>See more projects</SeeMore>
           </AsideContainerFooter>
         </FooterRecentProjects>
       </MainContainerHome>

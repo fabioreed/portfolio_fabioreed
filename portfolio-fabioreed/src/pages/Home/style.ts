@@ -39,21 +39,6 @@ export const SectionnContainerHome = styled.section`
     > h1 {
       color: var(--gray);
     }
-
-    /* h1 {
-      font-size: 1.5rem;
-      color: var(--black);
-
-      span {
-        color: var(--primary-color);
-        font-weight: 700;
-      }
-    }
-    
-    p {
-      color: var(--gray);
-      font-size: 1rem;
-    } */
   }
 
   @media (min-width: 768px) {
@@ -63,22 +48,6 @@ export const SectionnContainerHome = styled.section`
     align-items: center;
 
     padding: 1.7rem 8rem;
-
-    div {
-      /* width: 100%; */
-
-      /* h1 {
-        font-size: 2.4rem;
-      }
-
-      span {
-        font-size: 2.8rem;
-      }
-
-      p {
-        font-size: 1rem;
-      } */
-    }
   }
 `
 
@@ -426,10 +395,11 @@ export const SeeMore = styled(Link)`
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.9rem 0.7rem;
+  padding: 0.9rem;
   width: max-content;
-  background-color: var(--black);
-  border-radius: 8px 2px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  border: 1px solid var(--blue);
   font-family: 'Quicksand',sans-serif;
   font-weight: 600;
   color: var(--white);
@@ -439,5 +409,9 @@ export const SeeMore = styled(Link)`
     color: var(--black);
 
     background: var(--yellow);
+  }
+
+  @media (min-width: 768px) {
+    padding: 0.9rem 3rem;
   }
 `
