@@ -25,13 +25,13 @@ export const ModalItSelf = styled.section`
 
   position: absolute;
   top: 22.5px;
-  right: 7px;
+  right: 27px;
 
   z-index: 7;
 
   animation: slideIn 0.5s forwards;
 
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(16, 28, 46, .8);
   backdrop-filter: blur(20px); /* Ajuste o valor conforme desejado */
   box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
 

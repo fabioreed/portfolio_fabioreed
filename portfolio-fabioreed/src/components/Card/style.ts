@@ -83,9 +83,12 @@ export const Card = styled.li`
 
   position: relative;
 
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 
-  background-color: var(--white);
+  background: rgba(12, 28, 46, 0.7);
+  backdrop-filter: blur(10px);
+
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 
   cursor: pointer;
 
@@ -138,6 +141,8 @@ export const Card = styled.li`
     width: 100%;
     border-radius: 8px;
 
+    opacity: .6;
+
     /* max-width: 100%;
     height: auto;*/
     overflow: hidden; 
@@ -145,7 +150,7 @@ export const Card = styled.li`
   }
 
   &:hover {
-    background-color: #f2f2f2;
+    background-color: var(--blue);
   }
 
   @media (min-width: 768px) {
@@ -285,8 +290,8 @@ export const DescriptionWithOverFlow = styled.article`
       bottom: 45px;
       left: 0;
       width: 100%;
-      height: 50px; /* Ajuste a altura do degradê conforme necessário */
-      background: linear-gradient(transparent, rgba(246, 246, 246, 0.8)); /* Defina as cores do degradê aqui */
+      height: 50px;
+      background: linear-gradient(transparent, rgba(12, 28, 46, 0.6));
     }
   }
 `
@@ -301,10 +306,10 @@ export const TypeSection = styled.div`
     padding: .1rem .2rem;
 
     font-size: .5rem;
-    color: var(--gray);
+    color: var(--white);
     font-family: 'Quicksand', sans-serif;
 
-    background-color: var(--yellow);
+    background-color: var(--gray);
 
     transition: .4s ease;
 
@@ -314,7 +319,7 @@ export const TypeSection = styled.div`
     }
 
     @media (min-width: 768px) {
-      font-size: .6rem;
+      font-size: .55rem;
     }
   }
 `
