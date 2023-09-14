@@ -1,7 +1,7 @@
 import { CertificateCard, CertificateContainerList, ContainerLicensed, TitleContainer } from './style'
 import front from '../../assets/front.jpg'
 import back from '../../assets/back.jpg'
-import fullstack from '../../assets/fullStack.jpg'
+import fullstack from '../../assets/fullstack.jpg'
 
 const Licensed = () => {
 
