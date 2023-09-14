@@ -84,15 +84,7 @@ const projects = [
     'link': 'https://amaro-front.vercel.app',
     'github': 'https://github.com/fabioreed/front-end-challenge-amaro'
   },
-  {
-    'name': 'Starbucks - Landing Page',
-    'img': starbucks,
-    'category': 'frontend',
-    'description': 'Starbucks Landing Page with Hover and selection of itens',
-    'technologies': ['HTML', 'CSS'],
-    'link': 'https://fabioreed.github.io/Starbucks-Lading-Page/',
-    'github': 'https://github.com/fabioreed/Starbucks-Lading-Page'
-  },
+  
   {
     'name': 'Pepsi - Landing Page',
     'img': pepsi,
@@ -164,6 +156,15 @@ const projects = [
     'technologies': ['Python', 'ORM', 'Django', 'Rest Framework'],
     'link': 'https://github.com/fabioreed/pet-kare-fabioreed',
     'github': 'https://github.com/fabioreed/pet-kare-fabioreed'
+  },
+  {
+    'name': 'Starbucks - Landing Page',
+    'img': starbucks,
+    'category': 'frontend',
+    'description': 'Starbucks Landing Page with Hover and selection of itens',
+    'technologies': ['HTML', 'CSS'],
+    'link': 'https://fabioreed.github.io/Starbucks-Lading-Page/',
+    'github': 'https://github.com/fabioreed/Starbucks-Lading-Page'
   },
   {
     'name': 'Kenzie Buster - Python API',

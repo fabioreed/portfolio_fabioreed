@@ -22,6 +22,8 @@ export const HeaderContainer = styled.header`
     display: flex;
     gap: 1rem;
 
+    cursor: pointer;
+
     h3 {
       font-size: 1.4rem;
       font-weight: bold;

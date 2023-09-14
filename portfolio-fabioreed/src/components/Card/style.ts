@@ -86,7 +86,7 @@ export const Card = styled.li`
   background: rgba(12, 28, 46, 0.7);
   backdrop-filter: blur(10px);
 
-  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
 
   cursor: pointer;
 
