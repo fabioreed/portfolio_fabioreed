@@ -5,11 +5,12 @@ import Modal from '../Modal'
 import { UserContext } from '../../providers/UserContext'
 import ContactModal from '../ContactModal'
 import { userData } from '../../utils/userData'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 const Header = () => {
   const { modal, setModal, contact, setContact } = useContext(UserContext)
   const navigate = useNavigate()
+  const location = useLocation()
 
   const handleBackToHome = () => {
     navigate('/')
@@ -25,9 +26,21 @@ const Header = () => {
           <img src={`https://github.com/${userData.githubUser}.png`} />
         </div>
         <ul>
-          <li><LinkTag to='/'>Home</LinkTag></li>
-          <li><LinkTag to='/projects'>Projects</LinkTag></li>
-          <li><LinkTag to='/about'>About Me</LinkTag></li>
+          <li>
+            <LinkTag to='/' className={location.pathname === '/' ? 'active' : ''}>
+              Home
+            </LinkTag>
+          </li>
+          <li>
+            <LinkTag to='/projects' className={location.pathname === '/projects' ? 'active' : ''}>
+              Projects
+            </LinkTag>
+          </li>
+          <li>
+            <LinkTag to='/about' className={location.pathname === '/about' ? 'active' : ''}>
+              About Me
+            </LinkTag>
+          </li>
         </ul>
         <button className='buttonContact' onClick={() => setContact(!contact)}>Contact Me</button>
         <Burger>
