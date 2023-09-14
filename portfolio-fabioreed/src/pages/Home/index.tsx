@@ -16,9 +16,6 @@ import { Link } from 'react-router-dom'
 
 const Home = (): JSX.Element => {
 
-  console.log(recent)
-
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

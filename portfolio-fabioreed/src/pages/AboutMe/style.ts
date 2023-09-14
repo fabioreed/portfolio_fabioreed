@@ -276,11 +276,13 @@ export const LinkCardInfo = styled(Link)`
 
   color: var(--white);
 
-  border-radius: 2.2rem;
+  background: var(--blue);
+
+  border-radius: 1rem;
   
   border: 1px solid var(--white);
   cursor: pointer;
-  transition: .4s ease;
+  transition: .2s ease;
   
   > span {
     font-family: 'Quicksand', sans-serif;

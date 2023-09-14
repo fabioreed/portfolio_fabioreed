@@ -2,15 +2,12 @@ import { useEffect } from 'react'
 import Header from '../../components/Header'
 import { AnotherInfoCard, AsideCard, ContainerAboutMe, FigureContainer, SayHello, ContainerOfInfoCards, LinkCardInfo } from './style'
 import Me from '../../assets/Meme.jpg'
-// import { FaReact, FaNodeJs, FaPython, FaFigma } from 'react-icons/fa'
-// import { TbBrandNextjs } from 'react-icons/tb'
-// import { SiTypescript, SiCsswizardry, SiJavascript, SiStyledcomponents, SiMui, SiRedux, SiExpress, SiPostgresql } from 'react-icons/si'
 import { BiLogoGmail, BiLogoWhatsapp } from 'react-icons/bi'
 import { BsArrowRight } from 'react-icons/bs'
 import { FaLinkedin } from 'react-icons/fa'
-// import { DiDjango } from 'react-icons/di'
 import { userData } from '../../utils/userData'
 import Footer from '../../components/Footer'
+import Licensed from '../../components/Licensed'
 
 const AboutMe = () => {
 
@@ -57,6 +54,7 @@ const AboutMe = () => {
             </AsideCard>
           </ContainerOfInfoCards>
         </footer>
+        <Licensed />
       </ContainerAboutMe>
       <Footer />
     </>
@@ -64,20 +62,6 @@ const AboutMe = () => {
 }
 
 export default AboutMe
-{/* <AnotherInfoCard>
-  <LinkCardInfo to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
-    <BiLogoWhatsapp />
-    <span>My WhatsApp</span>
-  </LinkCardInfo>
-  <LinkCardInfo to={`https://www.linkedin.com/in/${userData.linkedinUser}/`} target="_blank">
-    <FaLinkedin />
-    <span>My LinkedIn</span>
-  </LinkCardInfo>
-  <LinkCardInfo to={`mailto:${userData.emailUser}`}>
-    <BiLogoGmail />
-    <span>{userData.emailUser}</span>
-  </LinkCardInfo>
-</AnotherInfoCard> */}
 
 {/* <h2>Technologies:</h2>
     <Icons>
@@ -97,11 +81,3 @@ export default AboutMe
       <SiExpress />
       <DiDjango />
     </Icons> */}
-
-{/* <FigureContainer>
-  <img src={Me} />
-  <div>
-    <h3>{userData.nameUser}</h3>
-    <span>Frontend Developer React | Typescript | CSS (Mobile First) | Node</span>
-  </div>
-</FigureContainer> */}
