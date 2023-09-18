@@ -40,9 +40,8 @@ export const Carda = () => {
             <h3>{repo.name}</h3>
             <span>{repo.description}</span>
             <TypeSection>
-                <span>{repo.language}</span>
+              Main Language: <span>{repo.language && ''}</span>
             </TypeSection>
-              {/* <p>{repo.description}</p> */}
             <LinkOfTheProject>
               <BsArrowUpLeftCircleFill />
               <LinkToTheProject to={repo.html_url} target="_blank">

@@ -184,7 +184,10 @@ export const CardGitHub = styled.li`
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  background: var(--white);
+  background: rgba(12, 28, 46, 0.7);
+  backdrop-filter: blur(10px);
+
+  box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
 
   cursor: pointer;
 
@@ -203,6 +206,10 @@ export const CardGitHub = styled.li`
     color: var(--gray);
   }
 
+  span {
+    color: var(--white);
+  }
+
   small {
     position: absolute;
     top: 10px;
@@ -215,14 +222,12 @@ export const CardGitHub = styled.li`
     width: 100%;
     border-radius: 8px;
 
-    /* max-width: 100%;
-    height: auto;*/
     overflow: hidden; 
     object-fit: cover;
   }
 
   &:hover {
-    background-color: #f2f2f2;
+    background: var(--blue);
   }
 
   @media (min-width: 768px) {
@@ -298,6 +303,8 @@ export const TypeSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: .4rem;
+
+  color: var(--gray);
 
   span {
     border-radius: 5px;
