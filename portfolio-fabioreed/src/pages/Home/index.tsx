@@ -69,6 +69,9 @@ const Home = (): JSX.Element => {
                   <FaReact />
                 </div>
                 <div>
+                  <TbBrandNextjs />
+                </div>
+                <div>
                   <SiTypescript />
                 </div>
                 <div>
@@ -76,9 +79,6 @@ const Home = (): JSX.Element => {
                 </div>
                 <div>
                   <DiCss3 />
-                </div>
-                <div>
-                  <TbBrandNextjs />
                 </div>
                 <div>
                   <FaNodeJs />

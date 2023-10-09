@@ -23,8 +23,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Quicksand', sans-serif;
     background: linear-gradient(rgba(16, 28, 46, .9999), rgba(0, 0, 0, 0.8)), url('https://images5.alphacoders.com/523/523521.jpg');
-    /* https://images7.alphacoders.com/888/888980.jpg */
-    /* https://images5.alphacoders.com/523/523521.jpg */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
