@@ -458,10 +458,18 @@ export const SeeMore = styled(Link)`
   color: var(--white);
   transition: .2s ease;
 
+  svg {
+    transform: rotate(90deg);
+  }
+
   &:hover {
     color: var(--black);
-
     background: var(--yellow);
+
+    svg {
+      transform: rotate(0deg);
+      transition: transform .2s ease-in-out;
+    }
   }
 
   @media (min-width: 768px) {

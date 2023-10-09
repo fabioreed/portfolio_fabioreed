@@ -21,7 +21,7 @@ import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
 import { BsCloudArrowDownFill, BsCaretRightFill } from 'react-icons/bs'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { FaLinkedin, FaGithub, FaFigma } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { userData } from '../../utils/userData'
 import Header from '../../components/Header'
 import CurriculoEn from '../../assets/Resume Fabio Silva En .pdf'
@@ -39,7 +39,6 @@ const Home = (): JSX.Element => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries?.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
           entry.target.classList.add('show')
         } else {
@@ -79,9 +78,6 @@ const Home = (): JSX.Element => {
                   <DiCss3 />
                 </div>
                 <div>
-                  <FaFigma />
-                </div>
-                <div>
                   <TbBrandNextjs />
                 </div>
                 <div>
@@ -113,7 +109,7 @@ const Home = (): JSX.Element => {
           <AsideContainerFooter>
             <RecentProjectsContainer>
               {recent.map((item, index) => (
-                <Link to={item.link} target='_blank'>
+                <Link to={item.link} target='_blank' key={index}>
                   <RecentProjectsCard key={index} className="hidden logo">
                     <span>{item.category}</span>
                     <img src={item.img} />
@@ -125,7 +121,9 @@ const Home = (): JSX.Element => {
                 </Link>
               ))}
               </RecentProjectsContainer>
-            <SeeMore to='/projects'>See more projects <BsCaretRightFill/></SeeMore>
+            <SeeMore to='/projects'>
+              See more projects <BsCaretRightFill />
+            </SeeMore>
           </AsideContainerFooter>
         </FooterRecentProjects>
       </MainContainerHome>
