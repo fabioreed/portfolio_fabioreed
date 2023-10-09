@@ -340,13 +340,13 @@ export const RecentProjectsCard = styled.li`
     display: flex;
   }
 
-  .logo:nth-child(2) {
+  .logo:nth-child(1) {
     transition-delay: 8000ms;
   }
-  .logo:nth-child(3) {
+  .logo:nth-child(2) {
     transition-delay: 1000ms;
   }
-  .logo:nth-child(4) {
+  .logo:nth-child(3) {
     transition-delay: 7600ms;
   }
 
