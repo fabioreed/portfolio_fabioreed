@@ -104,10 +104,10 @@ export const LinkTag = styled(Link)`
   &.active {
     color: var(--primary-color);
     font-weight: 600;
+    border-bottom: thin solid var(--primary-color);
   }
 
   &:hover {
-    font-weight: 600;
     color: var(--primary-color);
 
     transform: scaleX(-10px, -20px);

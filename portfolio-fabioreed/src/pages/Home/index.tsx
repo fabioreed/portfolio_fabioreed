@@ -1,5 +1,21 @@
 import { useEffect } from 'react'
-import { MainContainerHome, MediaSocial, PDFContainer, PictureHome, ResumeContainer, SectionnContainerHome, SocialMediaContainer, TechnologiesContainer, ContainerWhoIamWords, FooterRecentProjects, DivContainerRecentProjects, AsideContainerFooter, RecentProjectsContainer, RecentProjectsCard, SeeMore } from './style'
+import {
+  MainContainerHome,
+  MediaSocial,
+  PDFContainer,
+  PictureHome,
+  ResumeContainer,
+  SectionnContainerHome,
+  SocialMediaContainer,
+  TechnologiesContainer,
+  ContainerWhoIamWords,
+  FooterRecentProjects,
+  DivContainerRecentProjects,
+  AsideContainerFooter,
+  RecentProjectsContainer,
+  RecentProjectsCard,
+  SeeMore
+} from './style'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'

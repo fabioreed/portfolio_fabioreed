@@ -3,7 +3,7 @@ import Header from '../../components/Header'
 import { AnotherInfoCard, AsideCard, ContainerAboutMe, FigureContainer, SayHello, ContainerOfInfoCards, LinkCardInfo } from './style'
 import Me from '../../assets/Meme.jpg'
 import { BiLogoGmail, BiLogoWhatsapp } from 'react-icons/bi'
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowRight, BsGithub, BsChevronRight } from 'react-icons/bs'
 import { FaLinkedin } from 'react-icons/fa'
 import { userData } from '../../utils/userData'
 import Footer from '../../components/Footer'
@@ -39,15 +39,23 @@ const AboutMe = () => {
               <AnotherInfoCard>
                 <LinkCardInfo to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
                   <BiLogoWhatsapp />
-                  <span>My WhatsApp</span>
+                  <BsChevronRight />
+                  {/* <span>My WhatsApp</span> */}
                 </LinkCardInfo>
                 <LinkCardInfo to={`https://www.linkedin.com/in/${userData.linkedinUser}/`} target="_blank">
                   <FaLinkedin />
-                  <span>My LinkedIn</span>
+                  <BsChevronRight />
+                  {/* <span>My LinkedIn</span> */}
                 </LinkCardInfo>
                 <LinkCardInfo to={`mailto:${userData.emailUser}`}>
                   <BiLogoGmail />
-                  <span>{userData.emailUser}</span>
+                  <BsChevronRight />
+                  {/* <span>{userData.emailUser}</span> */}
+                </LinkCardInfo>
+                <LinkCardInfo to={`https://www.github.com/${userData.githubUser}/`}>
+                  <BsGithub />
+                  <BsChevronRight />
+                  {/* <span>Github</span> */}
                 </LinkCardInfo>
               </AnotherInfoCard>
               

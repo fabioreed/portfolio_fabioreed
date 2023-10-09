@@ -252,33 +252,38 @@ export const AnotherInfoCard = styled.ul`
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: space-between;
 
   background-color: inherit;
   
   font-size: 1.1rem;
 
-  width: 100%;
+  height: fit-content;
+
+  /* width: fit-content; */
 
   @media (min-width: 768px) {
     flex-direction: row;
+    /* flex-wrap: nowrap; */
   }
 `
 
 export const LinkCardInfo = styled(Link)`
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 
-  font-size: .8rem;
+  font-size: 1.1rem;
   
-  padding: .4rem;
+  padding: .7rem;
   width: 100%;
 
   color: var(--white);
 
   background: var(--blue);
 
-  border-radius: 1rem;
+  border-radius: .1rem;
   
   border: 1px solid var(--white);
   cursor: pointer;
@@ -288,11 +293,28 @@ export const LinkCardInfo = styled(Link)`
     font-family: 'Quicksand', sans-serif;
   }
 
+  &:nth-child(1){
+    background: var(--whatsapp);
+    border: 1px solid var(--whatsapp);
+  }
+  &:nth-child(2){
+    background: var(--linkedin);
+    border: 1px solid var(--linkedin);
+  }
+  &:nth-child(3) {
+    background: var(--gmail);
+    border: 1px solid var(--gmail);
+  }
+  &:nth-child(4) {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+  }
+
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     padding: .7rem;
 
@@ -300,19 +322,10 @@ export const LinkCardInfo = styled(Link)`
       font-size: .7rem;
     }
 
-    &:hover:nth-child(1) {
-      background: var(--whatsapp);
-      border: 1px solid var(--whatsapp);
-    }
-
-    &:hover:nth-child(2) {
-      background: var(--linkedin);
-      border: 1px solid var(--linkedin);
-    }
-
+    &:hover:nth-child(1), 
+    &:hover:nth-child(2), 
     &:hover:nth-child(3) {
-      background: var(--gmail);
-      border: 1px solid var(--gmail);
+      opacity: .8;
     }
   }
 `
