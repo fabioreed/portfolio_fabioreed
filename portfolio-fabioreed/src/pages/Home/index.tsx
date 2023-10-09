@@ -19,7 +19,7 @@ import {
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
-import { BsCloudArrowDownFill } from 'react-icons/bs'
+import { BsCloudArrowDownFill, BsCaretRightFill } from 'react-icons/bs'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { FaLinkedin, FaGithub, FaFigma } from 'react-icons/fa'
 import { userData } from '../../utils/userData'
@@ -34,6 +34,26 @@ const Home = (): JSX.Element => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries?.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+
+    const hiddenElements: any = document.querySelectorAll('.hidden')
+    hiddenElements?.forEach((el: any) => observer.observe(el))
+
+    return () => {
+      hiddenElements?.forEach((el: any) => observer.unobserve(el))
+    }
   }, [])
 
   return (
@@ -88,13 +108,13 @@ const Home = (): JSX.Element => {
 
         <FooterRecentProjects>
           <DivContainerRecentProjects>
-            <h3>My <span>recent projects</span></h3>
+            <h3 className="hidden logo">MY RECENT PROJECTS</h3>
           </DivContainerRecentProjects>
           <AsideContainerFooter>
             <RecentProjectsContainer>
               {recent.map((item, index) => (
                 <Link to={item.link} target='_blank'>
-                  <RecentProjectsCard key={index}>
+                  <RecentProjectsCard key={index} className="hidden logo">
                     <span>{item.category}</span>
                     <img src={item.img} />
                     <div>
@@ -105,7 +125,7 @@ const Home = (): JSX.Element => {
                 </Link>
               ))}
               </RecentProjectsContainer>
-              <SeeMore to='/projects'>See more projects</SeeMore>
+            <SeeMore to='/projects'>See more projects <BsCaretRightFill/></SeeMore>
           </AsideContainerFooter>
         </FooterRecentProjects>
       </MainContainerHome>

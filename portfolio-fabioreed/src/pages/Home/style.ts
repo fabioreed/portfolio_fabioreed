@@ -20,7 +20,7 @@ export const MainContainerHome = styled.main`
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -234,8 +234,34 @@ export const FooterRecentProjects = styled.footer`
 `
 
 export const DivContainerRecentProjects = styled.div`
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateY(100%);
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  .logo {
+    display: flex;
+  }
+
+  .logo:nth-child(2) {
+    transition-delay: 8000ms;
+  }
+  .logo:nth-child(3) {
+    transition-delay: 1000ms;
+  }
+  .logo:nth-child(4) {
+    transition-delay: 7600ms;
+  }
+
   > h3 {
-    color: var(--gray);
+    color: var(--primary-color);
     font-size: .9rem;
   }
 
@@ -274,6 +300,19 @@ export const RecentProjectsContainer = styled.ul`
   flex-direction: column;
   gap: 1rem;
 
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateY(100%);
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+
   @media (min-width: 458px) {
     flex-direction: row;
     justify-content: space-between;
@@ -296,6 +335,20 @@ export const RecentProjectsCard = styled.li`
   transition: .2s ease;
 
   position: relative;
+
+  .logo {
+    display: flex;
+  }
+
+  .logo:nth-child(2) {
+    transition-delay: 8000ms;
+  }
+  .logo:nth-child(3) {
+    transition-delay: 1000ms;
+  }
+  .logo:nth-child(4) {
+    transition-delay: 7600ms;
+  }
 
   > span {
     background: rgb(14,107,168);
