@@ -27,7 +27,7 @@ export const HeaderContainer = styled.header`
     h3 {
       font-size: 1.4rem;
       font-weight: bold;
-      color: var(--gray);
+      color: var(--light-gray);
     }
 
     img {
@@ -93,7 +93,7 @@ export const HeaderContainer = styled.header`
 
 export const LinkTag = styled(Link)`
   font-size: .9rem;
-  color: var(--gray);
+  color: var(--light-gray);
   font-weight: 500;
 
   list-style: none;

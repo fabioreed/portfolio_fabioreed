@@ -22,8 +22,8 @@ const AboutMe = () => {
         <footer>
           <article>
             <h1>About Me</h1>
-            <p>My name is Fabio, I'm 29 and I am from Brazil. I'm married to my beautiful English teacher Eden, who helped me to reach level C1. 
-  I'm passionate about programming and I am recently graduated as a Fullstack Developer. I am procient in the languages React, Typescript, Css (Mobile First), Javascript, and Node.</p>
+            <p>My name is Fabio, I'm 29 and I am from Brazil. I'm married to my beautiful English teacher Eden, who helped me to reach <b>level C1</b>. 
+  I'm passionate about programming and I am recently graduated as a <b>Fullstack Developer</b>. I am procient in the languages React, Typescript, Css (Mobile First), Javascript, and Node.</p>
             <SayHello to={`https://wa.me/${userData.whatsappNumber}`} target="_blank"><BsArrowRight />Say Hello</SayHello>
           </article>
           <ContainerOfInfoCards>

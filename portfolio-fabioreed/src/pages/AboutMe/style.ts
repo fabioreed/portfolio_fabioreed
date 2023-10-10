@@ -40,11 +40,11 @@ export const ContainerAboutMe = styled.main`
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     h1 {
-      color: var(--gray);
+      color: var(--primary-color);
     }
 
     p {
-      color: var(--gray);
+      color: var(--light-gray);
       line-height: 150%;
       font-size: .9rem;
     }

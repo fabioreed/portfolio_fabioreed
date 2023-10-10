@@ -37,7 +37,7 @@ export const SectionnContainerHome = styled.section`
     gap: 1.2rem;
 
     > h1 {
-      color: var(--gray);
+      color: var(--light-gray);
     }
   }
 
@@ -66,7 +66,7 @@ export const ContainerWhoIamWords = styled.div`
   }
   
   p {
-    color: var(--gray);
+    color: var(--light-gray);
     font-size: 1rem;
   }
 
