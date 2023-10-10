@@ -6,6 +6,7 @@ export const ContainerProjects = styled.main`
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
 
   margin-top: 3.7rem;
