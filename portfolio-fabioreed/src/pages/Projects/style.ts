@@ -11,7 +11,7 @@ export const ContainerProjects = styled.main`
   margin-top: 3.7rem;
 
   @media (min-width: 768px) {
-    margin-top: 11rem;
+    margin-top: 7.5rem;
   }
 `
 

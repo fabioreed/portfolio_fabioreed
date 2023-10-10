@@ -78,19 +78,18 @@ export const Card = styled.li`
 
   padding: 1rem;
   width: 290px;
+  height: 290px;
 
   border-radius: 1rem;
 
   position: relative;
 
-  background: rgba(12, 28, 46, 0.7);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 
-  box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
-
-  cursor: pointer;
-
   animation: ${fadeIn} 0.5s ease-in-out;
+
+  transition: .5s ease;
 
   .card.typescript {
     border-top: 1px solid blue;
@@ -102,7 +101,7 @@ export const Card = styled.li`
 
   h3 {
     font-size: .9rem;
-    color: var(--gray);
+    color: var(--primary-color);
   }
 
   small {
@@ -148,7 +147,11 @@ export const Card = styled.li`
   }
 
   &:hover {
-    background-color: var(--blue);
+    background: rgba(255, 255, 255, 0.2);
+
+    > h3 {
+      color: var(--light-gray);
+    }
   }
 
   @media (min-width: 768px) {
@@ -184,7 +187,7 @@ export const CardGitHub = styled.li`
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  background: rgba(12, 28, 46, 0.7);
+  background: transparent;
   backdrop-filter: blur(10px);
 
   box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
@@ -272,31 +275,32 @@ export const TagCategory = styled.div`
 `
 
 export const DescriptionWithOverFlow = styled.article`
-  p {
-    font-size: .6rem;
-    color: var(--gray);
-    line-height: 150%;
-  }
-
-@media(min-width: 769px) {
-  font-size: .8rem;
-  overflow-y: auto;
   height: 80px;
+  overflow-y: auto;
 
   p {
-    font-size: .8rem;
+    font-size: .7rem;
+    color: var(--light-gray);
+    line-height: 150%;
   }
 
   &:before {
     content: '';
     position: absolute;
-      bottom: 45px;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      background: linear-gradient(transparent, rgba(12, 28, 46, 0.6));
-    }
+    bottom: 45px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent, transparent);
   }
+
+@media(min-width: 769px) {
+  font-size: .8rem;
+
+  p {
+    font-size: .76rem;
+  }
+}
 `
 
 export const TypeSection = styled.div`
@@ -307,24 +311,23 @@ export const TypeSection = styled.div`
   color: var(--gray);
 
   span {
-    border-radius: 5px;
-    padding: .1rem .2rem;
+    border-radius: 12px;
+    padding: .2rem .4rem;
 
-    font-size: .5rem;
+    font-size: .6rem;
     color: var(--white);
     font-family: 'Quicksand', sans-serif;
 
-    background-color: var(--gray);
+    background: var(--primary-color);
 
     transition: .4s ease;
 
     &:hover {
       background-color: var(--black);
-      color: var(--white);
     }
 
     @media (min-width: 768px) {
-      font-size: .55rem;
+      font-size: .65rem;
     }
   }
 `

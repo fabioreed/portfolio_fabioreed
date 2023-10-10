@@ -30,7 +30,11 @@ interface RepoType {
 }
 
 export const Carda = () => {
-  const { filteredProjects, selectedCategory, repositoriesGitHub } = useContext(UserContext)
+  const {
+    filteredProjects,
+    selectedCategory,
+    repositoriesGitHub
+  } = useContext(UserContext)
 
   return (
     <>
@@ -49,7 +53,6 @@ export const Carda = () => {
               </LinkToTheProject>
             </LinkOfTheProject>
           </CardGitHub>
-
         ))) : (
 
         filteredProjects.map((project: ProjectType, index: number) => (
