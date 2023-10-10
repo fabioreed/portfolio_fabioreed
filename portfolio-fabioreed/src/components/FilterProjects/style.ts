@@ -15,18 +15,18 @@ export const ButtonProject = styled.button`
   background-color: transparent;
   padding: .7rem .4rem;
 
-  color: var(--primary-color);
+  color: var(--gray);
 
   &.selected {
     border-bottom: 1.4px solid rgba(0, 0, 0, 0.08);
-    border-radius: 3px 3px 0 0;
-    /* background-color: rgba(0, 0, 0, 0.01); */
-    color: var(--gray);
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--primary-color);
   }
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.03);
-    color: var(--gray);
+    color: var(--primary-color);
     border-radius: 6px 6px 0 0;
   }
 

@@ -3,7 +3,12 @@ import { ContainerProjectsButton, ButtonProject } from './style'
 import { UserContext } from '../../providers/UserContext'
 
 const FilterProjects = () => {
-  const { setCategory, selectedCategory, setSelectedCategory, repositoriesGitHub } = useContext(UserContext)
+  const {
+    setCategory,
+    selectedCategory,
+    setSelectedCategory,
+    repositoriesGitHub
+  } = useContext(UserContext)
 
   const handleFilter = (category: string) => {
     setCategory(category)
