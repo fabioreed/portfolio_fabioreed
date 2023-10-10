@@ -30,11 +30,6 @@ export const HeaderContainer = styled.header`
       color: var(--light-gray);
     }
 
-    img {
-      border-radius: 50%;
-      width: 42px;
-    }
-
     span {
       color: var(--primary-color);
       font-weight: bold;
@@ -71,10 +66,6 @@ export const HeaderContainer = styled.header`
     div {
       h3 {
         font-size: 1.7rem;
-      }
-
-      img {
-        display: none;
       }
     }
 
@@ -135,6 +126,15 @@ export const Burger = styled.aside`
     }
   }
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+export const Img = styled.img`
+  border-radius: 50%;
+  width: 42px;
+  
   @media (min-width: 768px) {
     display: none;
   }

@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { Burger, HeaderContainer, HeaderFixed, LinkTag } from './style'
+import { Burger, HeaderContainer, HeaderFixed, Img, LinkTag } from './style'
 import { FiMenu } from 'react-icons/fi'
 import Modal from '../Modal'
 import { UserContext } from '../../providers/UserContext'
@@ -23,7 +23,7 @@ const Header = () => {
           <h3 onClick={handleBackToHome}>
             Fabio<span>.dev</span>
           </h3>
-          <img src={`https://github.com/${userData.githubUser}.png`} />
+          <Img src={`https://github.com/${userData.githubUser}.png`} />
         </div>
         <ul>
           <li>

@@ -1,35 +1,44 @@
 import { useContext } from 'react'
 import { UserContext } from '../../providers/UserContext'
-import { ContactContainer, RedesSociaisContato } from './style'
+import { AvatarApple, BackgroundModal, ContactContainer, RedesSociaisContato } from './style'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { BiLogoGmail } from 'react-icons/bi'
 import { MediaSocial } from '../../pages/Home/style'
-import { Link } from 'react-router-dom'
 import { userData } from '../../utils/userData'
+import avatar1 from '../../assets/iphoneavatar.jpg'
+import avatar2 from '../../assets/iphoneavatar2.jpg'
+import avatar3 from '../../assets/iphoneavatar3.jpg'
+import avatar4 from '../../assets/iphoneavatar4.jpg'
+import avatar5 from '../../assets/iphoneavatar5.jpg'
+import avatar6 from '../../assets/iphoneavatar6.jpg'
 
 const ContactModal = () => {
   const { contact, setContact } = useContext(UserContext)
   
   return (
-    <ContactContainer>
-      <h2>My info!</h2>
-      <div>
-        <h3>Email:</h3>
-        <span>{userData.emailUser}</span>
+    <BackgroundModal>
+      <ContactContainer>
+        <h2>Get in touch</h2>
         <span className='xizinho' onClick={() => setContact(!contact)}>X</span>
-      </div>
-      <div>
-        <h3>WhatsApp:</h3>
-        <span>
-          <Link to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
-            +55 83 98639-1165  - just click here!
-          </Link>
-        </span>
-      </div>
-      <RedesSociaisContato>
-        <MediaSocial to={`https://www.linkedin.com/in/${userData.linkedinUser}/`} target="_blank"><FaLinkedin /></MediaSocial>
-        <MediaSocial to={`https://github.com/${userData.githubUser}`} target="_blank"><FaGithub /></MediaSocial>
-      </RedesSociaisContato>
-    </ContactContainer>
+        <AvatarApple>
+          <img src={avatar1} />
+          <img src={avatar3} />
+          <img src={avatar2} />
+          <img src={avatar4} />
+          <img src={avatar5} />
+          <img src={avatar6} />
+        </AvatarApple>
+        
+        <p>Here is my social media</p>
+        <RedesSociaisContato>
+          <MediaSocial to={`https://www.linkedin.com/in/${userData.linkedinUser}/`} target="_blank"><FaLinkedin /></MediaSocial>
+          <MediaSocial to={`https://github.com/${userData.githubUser}`} target="_blank"><FaGithub /></MediaSocial>
+          <MediaSocial to={`https://wa.me/${userData.whatsappNumber}`} target="_blank"><IoLogoWhatsapp /></MediaSocial>
+          <MediaSocial to={`mailto:${userData.emailUser}`} target="_blank"><BiLogoGmail /></MediaSocial>
+        </RedesSociaisContato>
+      </ContactContainer>
+    </BackgroundModal>
   )
 }
 

@@ -40,22 +40,18 @@ const AboutMe = () => {
                 <LinkCardInfo to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
                   <BiLogoWhatsapp />
                   <BsChevronRight />
-                  {/* <span>My WhatsApp</span> */}
                 </LinkCardInfo>
                 <LinkCardInfo to={`https://www.linkedin.com/in/${userData.linkedinUser}/`} target="_blank">
                   <FaLinkedin />
                   <BsChevronRight />
-                  {/* <span>My LinkedIn</span> */}
                 </LinkCardInfo>
                 <LinkCardInfo to={`mailto:${userData.emailUser}`}>
                   <BiLogoGmail />
                   <BsChevronRight />
-                  {/* <span>{userData.emailUser}</span> */}
                 </LinkCardInfo>
                 <LinkCardInfo to={`https://www.github.com/${userData.githubUser}/`}>
                   <BsGithub />
                   <BsChevronRight />
-                  {/* <span>Github</span> */}
                 </LinkCardInfo>
               </AnotherInfoCard>
               
