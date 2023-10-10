@@ -147,7 +147,6 @@ export const FigureContainer = styled.figure`
     transition: .4s ease;
 
     &:hover {
-      border: 2px solid var(--yellow);
       opacity: 87%;
     }
   }
@@ -176,10 +175,6 @@ export const FigureContainer = styled.figure`
 
     div > span {
       font-size: .7rem;
-    }
-
-    img {
-      border: 2px solid var(--white);
     }
   }
 `

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import Header from '../../components/Header'
 import { AnotherInfoCard, AsideCard, ContainerAboutMe, FigureContainer, SayHello, ContainerOfInfoCards, LinkCardInfo } from './style'
-import Me from '../../assets/Meme.jpg'
+import Me from '../../assets/iphoneavatar4.jpg'
 import { BiLogoGmail, BiLogoWhatsapp } from 'react-icons/bi'
 import { BsArrowRight, BsGithub, BsChevronRight } from 'react-icons/bs'
 import { FaLinkedin } from 'react-icons/fa'
