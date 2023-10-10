@@ -23,7 +23,7 @@ export const ContactContainer = styled.main`
 
   z-index: 2;
 
-  background: rgba(0, 0, 0, .7); /* Mantém o mesmo fundo do ContactContainer */
+  background: rgba(0, 0, 0, .7);
   backdrop-filter: blur(20px);
 
   padding: 2rem;
@@ -85,7 +85,7 @@ export const AvatarApple = styled.div`
 
 export const RedesSociaisContato = styled.section`
   display: flex;
-  gap: 3rem;
+  justify-content: space-evenly;
 
   transition: .5s ease;
 

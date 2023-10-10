@@ -54,7 +54,6 @@ const AboutMe = () => {
                   <BsChevronRight />
                 </LinkCardInfo>
               </AnotherInfoCard>
-              
             </AsideCard>
           </ContainerOfInfoCards>
         </footer>
@@ -66,22 +65,3 @@ const AboutMe = () => {
 }
 
 export default AboutMe
-
-{/* <h2>Technologies:</h2>
-    <Icons>
-      <FaReact />
-      <SiTypescript />
-      <SiJavascript />
-      <SiStyledcomponents />
-      <SiCsswizardry />
-      <TbBrandNextjs />
-      <FaFigma />
-      <SiMui />
-      <SiRedux />
-      <BsGit />
-      <FaNodeJs />
-      <SiPostgresql />
-      <FaPython />
-      <SiExpress />
-      <DiDjango />
-    </Icons> */}
