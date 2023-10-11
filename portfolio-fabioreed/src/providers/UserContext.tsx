@@ -62,10 +62,6 @@ export const UserProvider = ({ children }: IDefaultProviderProps) => {
     fetchData()
   }, [])
 
-  // const toggleTheme = () => {
-  //   // setTheme(theme === 'light' ? setTheme('dark') : setTheme('light'))
-  // }
-
   return (
     <UserContext.Provider
       value={{ modal, setModal, contact, setContact, category, setCategory, selectedCard, setSelectedCard, showModal, setShowModal, filteredProjects, selectedCategory, setSelectedCategory, repositoriesGitHub, setRepositoriesGitHub }}>

@@ -36,15 +36,17 @@ export const Carda = () => {
     repositoriesGitHub
   } = useContext(UserContext)
 
+  console.log(repositoriesGitHub)
+
   return (
     <>
       {selectedCategory === 'github' ? (
         repositoriesGitHub.map((repo: RepoType) => (
           <CardGitHub key={repo.id} className="fade-in">
             <h3>{repo.name}</h3>
-            <span>{repo.description}</span>
+            <span>{repo.description || 'No description available'}</span>
             <TypeSection>
-              Main Language: <span>{repo.language && ''}</span>
+              Main Language: <span>{repo.language || 'Not specified'}</span>
             </TypeSection>
             <LinkOfTheProject>
               <BsArrowUpLeftCircleFill />
