@@ -7,7 +7,7 @@ export const HeaderFixed = styled.div`
   right: 0;
   left: 0;
   z-index: 9;
-  padding: 0.7rem;
+  padding: .7rem;
   background: rgba(0, 0, 0, 0.01);
   backdrop-filter: blur(10px); /* Ajuste o valor conforme desejado */
   box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
@@ -20,12 +20,13 @@ export const HeaderContainer = styled.header`
 
   div {
     display: flex;
+    align-items: center;
     gap: 1rem;
 
     cursor: pointer;
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: var(--light-gray);
     }
@@ -61,11 +62,11 @@ export const HeaderContainer = styled.header`
   }
 
   @media (min-width: 768px) {
-    padding: 1.7rem 8rem;
+    padding: .4rem 8rem;
 
     div {
       h3 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -133,7 +134,7 @@ export const Burger = styled.aside`
 
 export const Img = styled.img`
   border-radius: 50%;
-  width: 42px;
+  width: 32px;
   
   @media (min-width: 768px) {
     display: none;

@@ -450,14 +450,14 @@ export const SeeMore = styled(Link)`
   gap: 0.4rem;
   padding: 0.9rem;
   width: max-content;
-   background: rgb(14,107,168);
-    background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
+  background: rgb(14,107,168);
+  background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
   border-radius: 8px;
   border: 1px solid var(--blue);
   font-family: 'Quicksand',sans-serif;
   font-weight: 600;
   color: var(--white);
-  transition: .2s ease;
+  transition: .8s ease;
 
   svg {
     transform: rotate(90deg);

@@ -90,7 +90,6 @@ const Home = (): JSX.Element => {
                 <a href={CurriculoEn} download>English CV<BsCloudArrowDownFill /></a>
                 <a href={CurriculoPt} download>Currículo em português<BsCloudArrowDownFill /></a>
               </PDFContainer>
-              
             </ResumeContainer>
           </div>
           <PictureHome>

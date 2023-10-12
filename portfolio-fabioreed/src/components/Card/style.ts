@@ -197,6 +197,8 @@ export const CardGitHub = styled.li`
 
   animation: ${fadeIn} 0.5s ease-in-out;
 
+  transition: .5s ease;
+
   .card.typescript {
     border-top: 1px solid blue;
   }
@@ -232,7 +234,11 @@ export const CardGitHub = styled.li`
   }
 
   &:hover {
-    background: var(--blue);
+    background: rgba(255, 255, 255, 0.2);
+
+    > h3 {
+      color: var(--light-gray);
+    }
   }
 
   @media (min-width: 768px) {
