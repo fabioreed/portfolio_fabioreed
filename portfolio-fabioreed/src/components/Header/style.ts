@@ -32,8 +32,11 @@ export const HeaderContainer = styled.header`
     }
 
     span {
-      color: var(--primary-color);
-      font-weight: bold;
+      background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 40%);
+      color: transparent;
+      font-weight: 700;
+      -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+      background-clip: text; /* Para aplicar o gradiente ao texto */
     } 
   }
 

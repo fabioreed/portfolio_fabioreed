@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const BackgroundFooter = styled.div`
-  background: rgba(16, 28, 46, .7);
+  background: rgba(16, 28, 46, .3);
   backdrop-filter: blur(10px); /* Ajuste o valor conforme desejado */
   box-shadow: rgba(16, 28, 46, 1) 0px 4px 12px;
 `
