@@ -36,12 +36,13 @@ export const ContainerAboutMe = styled.main`
     padding: 1rem;
 
     border-radius: 1rem;
+    border: thin solid var(--new-green);
 
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: var(--new-green) 0px 0px 100px -20px;
 
     h1 {
-      background: linear-gradient(90deg, var(--super-pink) 0%, var(--super-purple) 60%);
+      background: linear-gradient(90deg, var(--pink) 0%, var(--purple) 40%);
       color: transparent;
       font-weight: 700;
       -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
@@ -50,8 +51,17 @@ export const ContainerAboutMe = styled.main`
 
     p {
       color: var(--light-gray);
+      
       line-height: 150%;
       font-size: .9rem;
+
+      .different {
+        background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+        color: transparent;
+        font-weight: 700;
+        -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+        background-clip: text; /* Para aplicar o gradiente ao texto */
+      }
     }
   }
 
@@ -263,7 +273,6 @@ export const AnotherInfoCard = styled.ul`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    /* flex-wrap: nowrap; */
   }
 `
 

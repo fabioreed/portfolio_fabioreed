@@ -23,7 +23,7 @@ const AboutMe = () => {
           <article>
             <h1>About Me</h1>
             <p>My name is Fabio, I'm 29 and I am from Brazil. I'm married to my beautiful English teacher Eden, who helped me to reach <b>level C1</b>. 
-  I'm passionate about programming and I am recently graduated as a <b>Fullstack Developer</b>. I am procient in the languages React, Typescript, Css (Mobile First), Javascript, and Node.</p>
+              I'm passionate about programming and I am recently graduated as a <b className='different'>Fullstack Developer</b>. <br />I have expertise in React, Next.js, Javascript, Typescript, Git Flow, and Github, with projects that interact with Backend APIs. On the backend, I work with Python, Node.js, Django, Express, Nest, Prisma, Swagger, and TypeORM.</p>
             <SayHello to={`https://wa.me/${userData.whatsappNumber}`} target="_blank"><BsArrowRight />Say Hello</SayHello>
           </article>
           <ContainerOfInfoCards>

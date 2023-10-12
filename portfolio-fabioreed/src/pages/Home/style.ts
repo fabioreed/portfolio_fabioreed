@@ -208,13 +208,11 @@ export const PictureHome = styled.section`
     img {
       width: 300px;
 
-      /* border: 3px solid var(--white); */
       border: thin solid var(--new-green);
       border-radius: 50%;
 
       opacity: 84%;
 
-      /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
       box-shadow: var(--new-green) 0px 0px 100px -20px;
     }
   }

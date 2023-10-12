@@ -4,6 +4,8 @@ export const ContainerLicensed = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  height: 80vh;
 `
 
 export const TitleContainer = styled.div`
@@ -14,6 +16,11 @@ export const TitleContainer = styled.div`
   > h3 {
     color: var(--primary-color);
     font-size: 1.4rem;
+    background: linear-gradient(90deg, var(--purple) 0%, var(--gradient-2) 70%);
+    color: transparent;
+    font-weight: 700;
+    -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+    background-clip: text; /* Para aplicar o gradiente ao texto */
 
     padding-top: 2rem;
   }
@@ -34,7 +41,7 @@ export const CertificateContainerList = styled.ul`
 
   @media (min-width: 768px) {
     justify-content: space-between;
-    padding: 1rem 8rem;
+    padding: 4rem 8rem;
   }
 `
 
@@ -44,15 +51,14 @@ export const CertificateCard = styled.li`
 
   background: var(--white);
   
-  border-radius: 6px;
+  border-radius: 12px;
+  border: thin var(--new-green) solid;
   
   flex-shrink: 0;
   
   width: 290px;
   
-  opacity: .7;
-  
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: var(--new-green) 0px 0px 80px -20px;
   
   transition: .2s ease;
 
@@ -70,15 +76,15 @@ export const CertificateCard = styled.li`
   scrollbar-color: #888 transparent;
 
   &:hover {
-    opacity: 1;
+    opacity: .83;
   }
 
   > figure {
-
     > img {
-      object-fit: contain;
+      object-fit: cover;
       width: 100%;
       height: 204px;
+      border-radius: 12px 12px 0 0;
     }
   }
 
