@@ -269,8 +269,12 @@ export const DivContainerRecentProjects = styled.div`
   }
 
   > h3 {
-    color: var(--primary-color);
-    font-size: .9rem;
+    font-size: 1rem;
+    background: linear-gradient(90deg, var(--gradient-1) 0%, var(--new-green) 60%);
+    color: transparent;
+    font-weight: 700;
+    -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+    background-clip: text; /* Para aplicar o gradiente ao texto */
   }
 
   display: flex;
@@ -281,7 +285,7 @@ export const DivContainerRecentProjects = styled.div`
 
   @media (min-width: 768px) {
     > h3 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     flex-direction: row;
@@ -307,6 +311,8 @@ export const RecentProjectsContainer = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  height: 60vh;
 
   .hidden {
     opacity: 0;
@@ -336,7 +342,9 @@ export const RecentProjectsCard = styled.li`
 
   background: var(--white);
 
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: thin var(--new-green) solid;
+  
+  box-shadow: var(--new-green) 0px 0px 60px -20px;
 
   opacity: .7;
 
@@ -440,6 +448,7 @@ export const RecentProjectsCard = styled.li`
 
   &:hover {
     opacity: 1;
+    box-shadow: var(--new-green) 0px 0px 100px -20px;
   }
 
   @media (min-width: 468px) {

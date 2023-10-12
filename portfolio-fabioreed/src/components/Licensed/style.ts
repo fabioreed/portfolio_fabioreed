@@ -51,12 +51,12 @@ export const CertificateCard = styled.li`
 
   background: var(--white);
   
-  border-radius: 12px;
-  border: thin var(--new-green) solid;
-  
   flex-shrink: 0;
   
   width: 290px;
+  
+  border-radius: 12px;
+  border: thin var(--new-green) solid;
   
   box-shadow: var(--new-green) 0px 0px 80px -20px;
   
