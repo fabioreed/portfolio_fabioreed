@@ -450,7 +450,8 @@ export const SeeMore = styled(Link)`
   gap: 0.4rem;
   padding: 0.9rem;
   width: max-content;
-  background-color: var(--blue);
+   background: rgb(14,107,168);
+    background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
   border-radius: 8px;
   border: 1px solid var(--blue);
   font-family: 'Quicksand',sans-serif;

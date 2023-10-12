@@ -6,7 +6,8 @@ import {
   TypeSection,
   DescriptionWithOverFlow,
   TagCategory,
-  CardGitHub
+  CardGitHub,
+  DescriptionWithOverFlowGH
 } from './style'
 import { UserContext } from '../../providers/UserContext'
 import { BsArrowUpLeftCircleFill } from 'react-icons/bs'
@@ -44,9 +45,11 @@ export const Carda = () => {
         repositoriesGitHub.map((repo: RepoType) => (
           <CardGitHub key={repo.id} className="fade-in">
             <h3>{repo.name}</h3>
-            <span>{repo.description || 'No description available'}</span>
+            <DescriptionWithOverFlowGH>
+              <span>{repo.description || 'No description available'}</span>
+            </DescriptionWithOverFlowGH>
             <TypeSection>
-              Main Language: <span>{repo.language || 'Not specified'}</span>
+              <span>{repo.language || 'Language not specified'}</span>
             </TypeSection>
             <LinkOfTheProject>
               <BsArrowUpLeftCircleFill />

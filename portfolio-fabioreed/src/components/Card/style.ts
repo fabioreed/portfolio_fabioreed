@@ -175,11 +175,12 @@ export const Card = styled.li`
 export const CardGitHub = styled.li`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: .4rem;
   flex-shrink: 0;
 
   padding: 1rem;
-  width: max-content;
+  width: 200px;
 
   border-radius: 1rem;
 
@@ -187,7 +188,7 @@ export const CardGitHub = styled.li`
 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 
   box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
@@ -206,11 +207,12 @@ export const CardGitHub = styled.li`
 
   h3 {
     font-size: .9rem;
-    color: var(--gray);
+    color: var(--primary-color);
   }
 
   span {
     color: var(--white);
+    font-size: .8rem;
   }
 
   small {
@@ -234,25 +236,17 @@ export const CardGitHub = styled.li`
   }
 
   @media (min-width: 768px) {
-    width: 100%;
+    gap: .8rem;
+    width: 240px;
     height: max-content;
 
     p {
       font-size: .7rem;
     }
   }
-
-  @media (min-width: 1229px) {
-    width: 48%;
-  }
-
-  @media (min-width: 1440px) {
-    width: 48%;
-  }
 `
 
 export const TagCategory = styled.div`
-  /* background: #496DDB; */
   background: rgb(14,107,168);
   background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
 
@@ -303,6 +297,35 @@ export const DescriptionWithOverFlow = styled.article`
 }
 `
 
+export const DescriptionWithOverFlowGH = styled.article`
+  height: 50px;
+  overflow-y: auto;
+
+  p {
+    font-size: .7rem;
+    color: var(--light-gray);
+    line-height: 150%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent, transparent);
+  }
+
+@media(min-width: 769px) {
+  font-size: .8rem;
+
+  p {
+    font-size: .76rem;
+  }
+}
+`
+
 export const TypeSection = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -318,7 +341,8 @@ export const TypeSection = styled.div`
     color: var(--white);
     font-family: 'Quicksand', sans-serif;
 
-    background: var(--primary-color);
+    background: rgb(14,107,168);
+    background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
 
     transition: .4s ease;
 
