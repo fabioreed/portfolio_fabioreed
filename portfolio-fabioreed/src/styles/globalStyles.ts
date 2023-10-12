@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --primary-color: #589AFC;
-    /* --primary-color: #7E76D5; */
     --secondary-color: #642AF7;
     --background: #FFF9E7;
     --white: #F6F6F6;
@@ -13,20 +12,31 @@ const GlobalStyle = createGlobalStyle`
     --light-gray: #a0a0a0;
     --yellow: #F8CD53;
     --green: #6FD660;
+
+    --new-green: #80E5D8;
+    --pink: #EC64A7;
+    --purple: #6F47C1;
+    --super-pink: #FC0081;
+    --super-purple: #8126C6;
+
     --black: #181818;
     --whatsapp: #25D366;
     --linkedin: #0077B5;
     --gmail: #EA4335;
     --blue: #101c2e;
+
+    --gradient-1: #9BEAF9;
+    --gradient-2: #439AE1;
+    --background-blue: #1A202C;
   }
 
   body {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(rgba(16, 28, 46, .9999), rgba(0, 0, 0, 0.8)), url('https://images5.alphacoders.com/523/523521.jpg');
+    /* background: linear-gradient(rgba(16, 28, 46, .9999), rgba(0, 0, 0, 0.8)), url('https://images5.alphacoders.com/523/523521.jpg'); */
+    background: linear-gradient(var(--background-blue), rgba(0, 0, 0, 0.8)), url('https://images5.alphacoders.com/523/523521.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background: #101C2E; */
   }
 
   button {

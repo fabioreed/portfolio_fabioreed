@@ -62,7 +62,7 @@ const Home = (): JSX.Element => {
         <SectionnContainerHome>
           <div>
             <ContainerWhoIamWords>
-              <h1>I'm a <span>&lt; Frontend /&gt; </span>Developer creating elegant and <span>functional</span> interfaces.</h1>
+              <h1>I'm a <span className='frontend-text'>&lt; Frontend /&gt; </span>Developer creating elegant and <span className='frontend-text'>functional</span> interfaces.</h1>
               <p>I'm a <b>frontend developer</b> passionate about creating elegant and functional interfaces that provide the best user experience.</p>
               <TechnologiesContainer>
                 <div>

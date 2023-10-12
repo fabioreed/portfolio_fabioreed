@@ -59,6 +59,14 @@ export const ContainerWhoIamWords = styled.div`
     font-size: 1.5rem;
     color: var(--black);
 
+    .frontend-text {
+      background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 60%);
+      color: transparent;
+      font-weight: 700;
+      -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+      background-clip: text; /* Para aplicar o gradiente ao texto */
+    }
+
     span {
       color: var(--primary-color);
       font-weight: 700;
@@ -200,12 +208,14 @@ export const PictureHome = styled.section`
     img {
       width: 300px;
 
-      border: 3px solid var(--white);
+      /* border: 3px solid var(--white); */
+      border: thin solid var(--new-green);
       border-radius: 50%;
 
       opacity: 84%;
 
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+      box-shadow: var(--new-green) 0px 0px 100px -20px;
     }
   }
 `

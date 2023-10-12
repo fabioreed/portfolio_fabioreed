@@ -24,8 +24,13 @@ export const TitleAndSpan = styled.div`
   gap: .7rem;
 
   h2 {
-    color: var(--primary-color);
     font-size: 1.1rem;
+    background: linear-gradient(90deg, var(--new-green) 0%, var(--gradient-2) 60%);
+    color: transparent;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
   }
 
   p {
