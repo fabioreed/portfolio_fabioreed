@@ -357,8 +357,6 @@ export const RecentProjectsContainer = styled.ul`
 
   padding: 2.8rem 0 2.8rem 0;
 
-  height: 60vh;
-
   .hidden {
     opacity: 0;
     transition: all 1s;
@@ -517,9 +515,9 @@ export const RecentProjectsCard = styled.li`
   }
 
   @media (min-width: 468px) {
-    max-width: 360px;
+    max-width: 480px;
   }
-
+  
   @media (min-width: 768px) {
   }
 `

@@ -58,7 +58,7 @@ export const HeaderContainer = styled.header`
     transition: .2s ease;
 
     &:hover {
-      background-color: var(--yellow);
+      background-color: var(--gradient-1);
       color: var(--black);
       box-shadow: .6px .7px 1px var(--primary-color);
     }
@@ -94,16 +94,15 @@ export const LinkTag = styled(Link)`
   list-style: none;
   text-decoration: none;
 
-  transition: .2s ease;
+  transition: .1s ease;
 
   &.active {
-    color: var(--primary-color);
+    color: var(--gradient-1);
     font-weight: 600;
-    border-bottom: thin solid var(--primary-color);
   }
 
   &:hover {
-    color: var(--primary-color);
+    color: var(--gradient-1);
 
     transform: scaleX(-10px, -20px);
   }

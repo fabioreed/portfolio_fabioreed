@@ -34,7 +34,7 @@ import { Link } from 'react-router-dom'
 const Home = (): JSX.Element => {
 
   useEffect(() => {
-    // window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   }, [])
 
   useEffect(() => {
@@ -104,7 +104,7 @@ const Home = (): JSX.Element => {
 
         <FooterRecentProjects>
           <DivContainerRecentProjects>
-            <h3 className="">MY RECENT PROJECTS</h3> {/*hidden logo*/}
+            <h3 className="hidden logo">MY RECENT PROJECTS</h3>
           </DivContainerRecentProjects>
           <AsideContainerFooter>
             <RecentProjectsContainer className='fade-in'>
