@@ -8,7 +8,7 @@ import netflix from './assets/netflix.png.jpg'
 import contact from './assets/Contact.png'
 import amaro from './assets/Amaro.png'
 import motors from './assets/MotorsShop.png'
-// import api from './assets/api.png'
+import entertainment from './assets/entertainment.jpg'
 
 const projects = [
   {
@@ -58,6 +58,15 @@ const projects = [
     'github': 'https://github.com/Go-Donate/Go-Donate'
   },
   {
+    'name': 'Entertainment',
+    'img': entertainment,
+    'category': 'fullstack',
+    'description': 'This project is an entertainment application that uses TheMovieDB API to display TV series and movies from different categories - such as popular, trending, on air, and top rating. The application provides details about the synopsis and technical information for each displayed TV series/movie card. Additionally, it includes an advanced search bar to facilitate searching for specific titles. The application also provides the option to explore these media items through various available genres. Additionally, it offers social authentication using Next oAuth, allowing users to sign in using their Gmail or GitHub accounts.',
+    'technologies': ['Next', 'Typescript', 'Stitches', 'Next Auth', 'Next SEO'],
+    'link': 'https://github.com/fabioreed/entertainment-nextjs',
+    'github': 'https://github.com/fabioreed/entertainment-nextjs'
+  },
+  {
     'name': 'Contact Manager',
     'img': contact,
     'category': 'fullstack',
@@ -65,7 +74,7 @@ const projects = [
     'technologies': ['React', 'Typescript', 'Node.js', 'Express', 'TypeORM'],
     'link': 'https://github.com/fabioreed/Client-Contacts-Manager',
     'github': 'https://github.com/fabioreed/Client-Contacts-Manager'
-  },
+  }, 
   {
     'name': 'Disney - Clone',
     'img': 'https://user-images.githubusercontent.com/99282728/174812449-1fa6061e-3abd-4046-bdca-895638bd1ebd.png',
@@ -84,7 +93,6 @@ const projects = [
     'link': 'https://amaro-front.vercel.app',
     'github': 'https://github.com/fabioreed/front-end-challenge-amaro'
   },
-  
   {
     'name': 'Pepsi - Landing Page',
     'img': pepsi,
