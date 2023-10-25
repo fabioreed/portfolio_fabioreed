@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import styled, { keyframes } from "styled-components"
-import outrafoto from '../../assets/Amaro.png'
 
 export const MainContainerHome = styled.main`
   padding: 1rem;
