@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import styled, { keyframes } from "styled-components"
+import outrafoto from '../../assets/Amaro.png'
 
 export const MainContainerHome = styled.main`
   padding: 1rem;
@@ -204,16 +205,50 @@ export const PictureHome = styled.section`
 
   @media (min-width: 880px) {
     display: block;
+    position: relative;
 
     img {
-      width: 300px;
+      width: 230px;
+      height: 230px;
 
       border: thin solid var(--new-green);
       border-radius: 50%;
 
+      object-fit: contain;
+
       opacity: 84%;
 
       box-shadow: var(--new-green) 0px 0px 100px -20px;
+
+      transition: transform .3s ease-in-out;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://scontent.fcpv3-1.fna.fbcdn.net/v/t39.30808-6/278589898_10159014619707945_5359262849476846308_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFylDbFQ2Wt957IaC1PujmJ0x0vEY4c8NXTHS8Rjhzw1ctigYNtrmaUGn2urjA2zG4Wd-nx_cm4hun9RKweKgD1&_nc_ohc=swOrGNmb-pcAX-xoRqY&_nc_ht=scontent.fcpv3-1.fna&oh=00_AfBXvNrUHzdLIUmAjNHEc5Hb_kCxWIGi8az62wskYTAxmQ&oe=653CB1D0');
+      background-size: cover;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity .5s ease-in-out;
+
+      object-fit: contain;
+
+      width: 230px;
+      height: 230px;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    img:hover {
+      /* transform: scale(.8); */
+      opacity: 0;
     }
   }
 `
