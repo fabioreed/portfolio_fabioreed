@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom"
 import styled, { keyframes } from "styled-components"
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
 export const MainContainerHome = styled.main`
   padding: 1rem;
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2rem;
 
   margin-top: 3.7rem;
@@ -343,15 +350,19 @@ export const AsideContainerFooter = styled.aside`
 
 export const RecentProjectsContainer = styled.ul`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
+
+  overflow-x: auto;
+
+  padding: 2.8rem 0 2.8rem 0;
 
   height: 60vh;
 
   .hidden {
     opacity: 0;
     transition: all 1s;
-    filter: blur(5px);
+    filter: blur(4px);
     transform: translateY(100%);
   }
 
@@ -361,9 +372,26 @@ export const RecentProjectsContainer = styled.ul`
     transform: translateY(0);
   }
 
-  @media (min-width: 458px) {
-    flex-direction: row;
-    justify-content: space-between;
+  &.fade-in {
+    position: relative;
+  }
+  
+  /* Pseudo-elemento para o degradê fade-in do lado direito */
+  &.fade-in::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px; /* Largura do degradê */
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.9)); /* Defina as cores desejadas */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  @media (min-width: 768px) {
+    overflow: auto;
   }
 `
 
@@ -371,14 +399,16 @@ export const RecentProjectsCard = styled.li`
   display: flex;
   flex-direction: column;
   gap: .4rem;
-  border-radius: 6px;
-  width: 100%;
+  flex-shrink: 0;
 
+  width: 320px;
+  
   background: var(--white);
-
+  
+  border-radius: 6px;
   border: thin var(--new-green) solid;
   
-  box-shadow: var(--new-green) 0px 0px 60px -20px;
+  box-shadow: var(--new-green) 0px 0px 47px -20px;
 
   opacity: .7;
 
@@ -427,6 +457,7 @@ export const RecentProjectsCard = styled.li`
     overflow: hidden; 
     object-fit: cover;
     max-width: 100%;
+    height: 150px;
 
     border-radius: 6px 6px 0px 0px;
   }
@@ -436,7 +467,7 @@ export const RecentProjectsCard = styled.li`
     flex-direction: column;
     gap: .4rem;
     padding: .7rem;
-    /* align-items: center; */
+    /* align-items: center; */ 
 
     > h4, p {
       font-size: .7rem;
@@ -482,16 +513,14 @@ export const RecentProjectsCard = styled.li`
 
   &:hover {
     opacity: 1;
-    box-shadow: var(--new-green) 0px 0px 100px -20px;
+    box-shadow: var(--new-green) 0px 0px 56px -20px;
   }
 
   @media (min-width: 468px) {
-    width: 100%;
-    max-width: 260px;
+    max-width: 360px;
   }
 
   @media (min-width: 768px) {
-    max-width: 320px;
   }
 `
 
@@ -499,24 +528,31 @@ export const SeeMore = styled(Link)`
   display: flex;
   align-items: center;
   gap: 0.4rem;
+
   padding: 0.9rem;
   width: max-content;
+
+  margin: 1rem;
+
   background: rgb(14,107,168);
   background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
+
   border-radius: 8px;
   border: 1px solid var(--blue);
+
   font-family: 'Quicksand',sans-serif;
   font-weight: 600;
   color: var(--white);
-  transition: .8s ease;
+  
+  transition: .3s ease;
 
   svg {
     transform: rotate(90deg);
   }
 
   &:hover {
-    color: var(--black);
-    background: var(--yellow);
+    color: var(--gradient-1);
+    background: var(--gradient-2);
 
     svg {
       transform: rotate(0deg);
@@ -525,6 +561,6 @@ export const SeeMore = styled(Link)`
   }
 
   @media (min-width: 768px) {
-    padding: 0.9rem 3rem;
+    margin: 0 8rem;
   }
 `

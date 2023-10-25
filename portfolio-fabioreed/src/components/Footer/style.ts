@@ -9,11 +9,9 @@ export const BackgroundFooter = styled.div`
 
 export const FooterContainer = styled.footer`
   display: flex;
-
   justify-content: space-between;
 
   padding: 3rem;
-
 
   > span {
     color: var(--gray);

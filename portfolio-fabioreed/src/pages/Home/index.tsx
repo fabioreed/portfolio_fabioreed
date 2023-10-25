@@ -14,7 +14,8 @@ import {
   AsideContainerFooter,
   RecentProjectsContainer,
   RecentProjectsCard,
-  SeeMore
+  SeeMore,
+  Container
 } from './style'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiTypescript, SiJavascript } from 'react-icons/si'
@@ -33,7 +34,7 @@ import { Link } from 'react-router-dom'
 const Home = (): JSX.Element => {
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0)
   }, [])
 
   useEffect(() => {
@@ -56,7 +57,7 @@ const Home = (): JSX.Element => {
   }, [])
 
   return (
-    <>
+    <Container>
       <MainContainerHome>
         <Header />
         <SectionnContainerHome>
@@ -103,10 +104,10 @@ const Home = (): JSX.Element => {
 
         <FooterRecentProjects>
           <DivContainerRecentProjects>
-            <h3 className="hidden logo">MY RECENT PROJECTS</h3>
+            <h3 className="">MY RECENT PROJECTS</h3> {/*hidden logo*/}
           </DivContainerRecentProjects>
           <AsideContainerFooter>
-            <RecentProjectsContainer>
+            <RecentProjectsContainer className='fade-in'>
               {recent.map((item, index) => (
                 <Link to={item.link} target='_blank' key={index}>
                   <RecentProjectsCard key={index} className="hidden logo">
@@ -119,15 +120,15 @@ const Home = (): JSX.Element => {
                   </RecentProjectsCard>
                 </Link>
               ))}
-              </RecentProjectsContainer>
-            <SeeMore to='/projects'>
-              See more projects <BsCaretRightFill />
-            </SeeMore>
+            </RecentProjectsContainer>
           </AsideContainerFooter>
         </FooterRecentProjects>
+        <SeeMore to='/projects' className='desktop-btn'>
+          See more projects <BsCaretRightFill />
+        </SeeMore>
       </MainContainerHome>
       <Footer />
-    </>
+    </Container>
   )
 }
 
