@@ -352,7 +352,7 @@ export const TypeSection = styled.div`
     
     transition: .4s ease;
     
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
 
     &:hover {
       background-color: var(--black);
