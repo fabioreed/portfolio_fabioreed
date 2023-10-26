@@ -114,7 +114,7 @@ const projects = [
   {
     'name': 'Maps - using API',
     'img': 'https://media.cnn.com/api/v1/images/stellar/prod/191004100903-google-maps-phone-stock.jpg?q=w_3169,h_2113,x_0,y_0,c_fill',
-    'category': 'backend',
+    'category': 'frontend',
     'description': 'Using Maps coordinates to locate the user.',
     'technologies': ['HTML', 'JS', 'CSS'],
     'link': 'https://fabioreed.github.io/Maps/',
