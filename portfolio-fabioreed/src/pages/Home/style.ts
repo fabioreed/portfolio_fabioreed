@@ -114,7 +114,6 @@ export const TechnologiesContainer = styled.article`
 
     &:hover {
       color: var(--primary-color);
-      
     }
   }
 
@@ -174,7 +173,7 @@ export const PDFContainer = styled.div`
     box-shadow: .6px .7px 1px var(--yellow);
 
     &:hover {
-      background-color: var(--yellow);
+      background-color: var(--gradient-1);
       color: var(--black);
       box-shadow: .6px .7px 1px var(--primary-color);
     }
@@ -354,6 +353,9 @@ export const RecentProjectsContainer = styled.ul`
   gap: 1rem;
 
   overflow-x: auto;
+  overflow-y: hidden;
+
+  height: fit-content;
 
   padding: 2.8rem 0 2.8rem 0;
 
@@ -362,6 +364,16 @@ export const RecentProjectsContainer = styled.ul`
     transition: all 1s;
     filter: blur(4px);
     transform: translateY(100%);
+
+    &.logo:nth-child(1) {
+      transition-delay: 800ms;
+    }
+    &.logo:nth-child(2) {
+      transition-delay: 1600ms;
+    }
+    &.logo:nth-child(3) {
+      transition-delay: 2400ms;
+    }
   }
 
   .show {
@@ -370,26 +382,7 @@ export const RecentProjectsContainer = styled.ul`
     transform: translateY(0);
   }
 
-  &.fade-in {
-    position: relative;
-  }
-  
-  /* Pseudo-elemento para o degradê fade-in do lado direito */
-  &.fade-in::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 20px; /* Largura do degradê */
-    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.9)); /* Defina as cores desejadas */
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-
   @media (min-width: 768px) {
-    overflow: auto;
   }
 `
 

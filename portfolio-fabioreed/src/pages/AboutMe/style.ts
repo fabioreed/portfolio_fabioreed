@@ -95,7 +95,7 @@ export const ContainerAboutMe = styled.main`
 
 export const SayHello = styled(Link)`
   display: flex;
-  gap: .3rem;
+  gap: .6rem;
   align-items: center;
 
   color: var(--white);
@@ -112,14 +112,25 @@ export const SayHello = styled(Link)`
   
   background-color: var(--primary-color);
   
-  transition: .26s ease;
+  transition: .2s ease;
   box-shadow: .6px .7px 1px var(--yellow);
   cursor: pointer;
-  
+
+  svg {
+    transform: rotate(90deg);
+  }
+
   &:hover {
-    background-color: var(--yellow);
+    color: var(--gradient-1);
+    background: var(--gradient-2);
+    background-color: var(--gradient-1);
     color: var(--black);
     box-shadow: .6px .7px 1px var(--primary-color);
+
+    svg {
+      transform: rotate(0deg);
+      transition: transform .2s ease-in-out;
+    }
   }
 `
 

@@ -341,16 +341,18 @@ export const TypeSection = styled.div`
 
   span {
     border-radius: 12px;
-    padding: .2rem .4rem;
-
+    padding: .2rem .6rem;
+    
     font-size: .6rem;
+    font-weight: 400;
     color: var(--white);
     font-family: 'Quicksand', sans-serif;
-
-    background: rgb(14,107,168);
-    background: linear-gradient(90deg, rgba(14,107,168,1) 0%, rgba(73,109,219,1) 100%);
-
+    
+    background: var(--background-blue);
+    
     transition: .4s ease;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
     &:hover {
       background-color: var(--black);
@@ -365,7 +367,7 @@ export const TypeSection = styled.div`
 export const LinkOfTheProject = styled.div`
   display: flex;
   align-items: center;
-  gap: .3rem;
+  gap: .6rem;
   cursor: pointer;
 
   color: var(--white);
@@ -373,14 +375,27 @@ export const LinkOfTheProject = styled.div`
 
   background-color: var(--primary-color);
   width: max-content;
-  padding: .3rem .4rem;
+  padding: .4rem .7rem;
 
-  transition: .5s ease;
+  transition: .2s ease;
 
   border-radius: 6px;
 
+  svg {
+    transform: rotate(90deg);
+  }
+
   &:hover {
+    color: var(--gradient-1);
+    background: var(--gradient-2);
     background-color: var(--black);
+    color: var(--white);
+    box-shadow: .6px .7px 1px var(--primary-color);
+
+    svg {
+      transform: rotate(136deg);
+      transition: transform .2s ease-in-out;
+    }
   }
 
   @media (min-width: 768px) {

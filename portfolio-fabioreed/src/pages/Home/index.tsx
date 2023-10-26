@@ -107,7 +107,7 @@ const Home = (): JSX.Element => {
             <h3 className="hidden logo">MY RECENT PROJECTS</h3>
           </DivContainerRecentProjects>
           <AsideContainerFooter>
-            <RecentProjectsContainer className='fade-in'>
+            <RecentProjectsContainer>
               {recent.map((item, index) => (
                 <Link to={item.link} target='_blank' key={index}>
                   <RecentProjectsCard key={index} className="hidden logo">

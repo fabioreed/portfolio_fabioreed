@@ -77,10 +77,10 @@ export const Carda = () => {
               <p>{project.description}</p>
             </DescriptionWithOverFlow>
             <LinkOfTheProject>
-              <BsArrowUpLeftCircleFill />
               <LinkToTheProject to={project.link} target="_blank">
                 <b>Visit project</b>
               </LinkToTheProject>
+              <BsArrowUpLeftCircleFill />
             </LinkOfTheProject>
           </Card>
         ))
