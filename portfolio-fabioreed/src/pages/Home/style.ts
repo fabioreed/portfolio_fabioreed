@@ -228,32 +228,12 @@ export const PictureHome = styled.section`
       transition: transform .3s ease-in-out;
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url('https://scontent.fcpv3-1.fna.fbcdn.net/v/t39.30808-6/278589898_10159014619707945_5359262849476846308_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFylDbFQ2Wt957IaC1PujmJ0x0vEY4c8NXTHS8Rjhzw1ctigYNtrmaUGn2urjA2zG4Wd-nx_cm4hun9RKweKgD1&_nc_ohc=swOrGNmb-pcAX-xoRqY&_nc_ht=scontent.fcpv3-1.fna&oh=00_AfBXvNrUHzdLIUmAjNHEc5Hb_kCxWIGi8az62wskYTAxmQ&oe=653CB1D0');
-      background-size: cover;
-      border-radius: 50%;
-      opacity: 0;
-      transition: opacity .5s ease-in-out;
-
-      object-fit: contain;
-
-      width: 230px;
-      height: 230px;
-    }
-
     &:hover::before {
       opacity: 1;
     }
 
     img:hover {
-      /* transform: scale(.8); */
-      opacity: 0;
+      opacity: 1;
     }
   }
 `
@@ -282,32 +262,6 @@ export const FooterRecentProjects = styled.footer`
 `
 
 export const DivContainerRecentProjects = styled.div`
-  .hidden {
-    opacity: 0;
-    transition: all 1s;
-    filter: blur(5px);
-    transform: translateY(100%);
-  }
-
-  .show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-  .logo {
-    display: flex;
-  }
-
-  .logo:nth-child(2) {
-    transition-delay: 8000ms;
-  }
-  .logo:nth-child(3) {
-    transition-delay: 1000ms;
-  }
-  .logo:nth-child(4) {
-    transition-delay: 7600ms;
-  }
-
   > h3 {
     font-size: 1rem;
     background: linear-gradient(90deg, var(--gradient-1) 0%, var(--new-green) 60%);
@@ -361,25 +315,27 @@ export const RecentProjectsContainer = styled.ul`
 
   .hidden {
     opacity: 0;
-    transition: all 1s;
-    filter: blur(4px);
-    transform: translateY(100%);
-
-    &.logo:nth-child(1) {
-      transition-delay: 800ms;
-    }
-    &.logo:nth-child(2) {
-      transition-delay: 1600ms;
-    }
-    &.logo:nth-child(3) {
-      transition-delay: 2400ms;
-    }
+    transition: all .6s;
+    filter: blur(5px);
+    transform: translateY(45%);
+    opacity: 0;
   }
 
   .show {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
+    opacity: .7;
+
+    &.logo:nth-child(1) {
+      transition-delay: 200ms;
+    }
+    &.logo:nth-child(2) {
+      transition-delay: 200ms;
+    }
+    &.logo:nth-child(3) {
+      transition-delay: 300ms;
+    }
   }
 
   @media (min-width: 768px) {
@@ -411,14 +367,14 @@ export const RecentProjectsCard = styled.li`
     display: flex;
   }
 
-  .logo:nth-child(1) {
-    transition-delay: 8000ms;
-  }
-  .logo:nth-child(2) {
+  &.logo:nth-child(1) {
     transition-delay: 1000ms;
   }
-  .logo:nth-child(3) {
-    transition-delay: 7600ms;
+  &.logo:nth-child(2) {
+    transition-delay: 4000ms;
+  }
+  &.logo:nth-child(3) {
+    transition-delay: 7000ms;
   }
 
   > span {
