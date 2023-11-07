@@ -508,6 +508,7 @@ export const SeeMore = styled(Link)`
   }
 
   @media (min-width: 768px) {
+  
     margin: 0 8rem;
   }
 `
