@@ -399,7 +399,7 @@ export const LinkOfTheProject = styled.div`
   }
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 `
 
