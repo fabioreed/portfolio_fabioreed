@@ -343,7 +343,8 @@ export const LinkCardInfo = styled(Link)`
 
     &:hover:nth-child(1), 
     &:hover:nth-child(2), 
-    &:hover:nth-child(3) {
+    &:hover:nth-child(3),
+    &:hover:nth-child(4) {
       opacity: .8;
     }
   }

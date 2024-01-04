@@ -23,7 +23,7 @@ const AboutMe = () => {
           <article>
             <h1>About Me</h1>
             <p>My name is Fabio and I am a Frontend Software Engineer from Brazil.<b></b>. 
-              I'm dedicated to crafting robust projects and recently graduated as a Fullstack Developer. My expertise lies in React, Next.js, JavaScript, TypeScript, Git Flow, and GitHub, specializing in projects that involve interaction with Backend APIs. On the backend, I work with Python, Node.js, Django, Express, Nest, Prisma, Swagger, and TypeORM.</p>
+              I'm dedicated to crafting robust projects and recently graduated as a Fullstack Developer.<br /> My expertise lies in React, Next.js, JavaScript, TypeScript, Git Flow, and GitHub, specializing in projects that involve interaction with Backend APIs. <br/>On the backend, I work with Python, Node.js, Django, Express, Nest, Prisma, Swagger, and TypeORM.</p>
             <SayHello to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
               Say Hello
               <BsCaretRightFill />
@@ -48,11 +48,11 @@ const AboutMe = () => {
                   <FaLinkedin />
                   <BsChevronRight />
                 </LinkCardInfo>
-                <LinkCardInfo to={`mailto:${userData.emailUser}`}>
+                <LinkCardInfo to={`mailto:${userData.emailUser}`} target="_blank">
                   <BiLogoGmail />
                   <BsChevronRight />
                 </LinkCardInfo>
-                <LinkCardInfo to={`https://www.github.com/${userData.githubUser}/`}>
+                <LinkCardInfo to={`https://www.github.com/${userData.githubUser}/`} target="_blank">
                   <BsGithub />
                   <BsChevronRight />
                 </LinkCardInfo>
