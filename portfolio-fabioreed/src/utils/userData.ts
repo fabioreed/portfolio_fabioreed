@@ -2,6 +2,6 @@ export const userData = {
   nameUser: "Fabio Luiz",
   githubUser: "fabioreed",
   linkedinUser: "fabioreed",
-  whatsappNumber: "+5583982019700",
+  whatsappNumber: "+16363730750",
   emailUser: "fabioeeereed@gmail.com"
 }
